@@ -1,0 +1,38 @@
+name: daily_zikr
+description: "Morning & Evening Adhkar App - Track your daily remembrances"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  cupertino_icons: ^1.0.8
+  
+  # State Management
+  provider: ^6.1.2
+  
+  # Local Storage
+  shared_preferences: ^2.3.5
+  
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+  
+  # UI & Typography
+  google_fonts: ^6.2.1
+  
+  # Date formatting
+  intl: ^0.20.2
+  hijri: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
