@@ -1,86 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:provider/provider.dart';
 import '../core/theme.dart';
 import '../providers/adhkar_provider.dart';
 import '../providers/settings_provider.dart';
 
-class SettingsScreen extends StatefulWidget {
+class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
-
-  @override
-  State<SettingsScreen> createState() => _SettingsScreenState();
-}
-
-class _SettingsScreenState extends State<SettingsScreen> {
-  bool _notificationPermissionGranted = false;
-  bool _checkingPermission = true;
-
-  @override
-  void initState() {
-    super.initState();
-    _checkNotificationPermission();
-  }
-
-  Future<void> _checkNotificationPermission() async {
-    if (kIsWeb) {
-      // Check using JS interop - simplified approach
-      setState(() {
-        _checkingPermission = false;
-        // Will be updated when user taps the button
-      });
-    } else {
-      setState(() => _checkingPermission = false);
-    }
-  }
-
-  Future<void> _requestNotificationPermission() async {
-    if (kIsWeb) {
-      // Use JS to request permission
-      final granted = await _requestWebNotificationPermission();
-      setState(() => _notificationPermissionGranted = granted);
-      if (granted) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'Notifications enabled! You\'ll receive reminders.',
-                style: AppTheme.englishStyle(fontSize: 14, color: Colors.white),
-              ),
-              backgroundColor: AppTheme.lightGreen,
-              behavior: SnackBarBehavior.floating,
-            ),
-          );
-        }
-      } else {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'Please allow notifications in your browser settings.',
-                style: AppTheme.englishStyle(fontSize: 14, color: Colors.white),
-              ),
-              backgroundColor: Colors.orange,
-              behavior: SnackBarBehavior.floating,
-            ),
-          );
-        }
-      }
-    }
-  }
-
-  Future<bool> _requestWebNotificationPermission() async {
-    // Use dart:html/js_interop to request notification permission
-    try {
-      // This calls the JavaScript function we defined in index.html
-      // which requests Notification permission and gets FCM token
-      // For now, we just show it's working
-      return true; // The browser will show its own permission dialog
-    } catch (e) {
-      debugPrint('Error requesting notification permission: $e');
-      return false;
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -149,6 +74,29 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         settingsProvider.setTransliterationEnabled(value);
                       },
                     ),
+                    const Divider(height: 1),
+                    ListTile(
+                      leading: Icon(
+                        Icons.font_download_outlined,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                      title: Text(
+                        'Arabic Font Style',
+                        style: AppTheme.englishStyle(
+                          fontSize: 16,
+                          color: textColor,
+                        ),
+                      ),
+                      subtitle: Text(
+                        _getArabicFontStyleName(settingsProvider.arabicFontStyle),
+                        style: AppTheme.englishStyle(
+                          fontSize: 14,
+                          color: subtitleColor,
+                        ),
+                      ),
+                      trailing: const Icon(Icons.arrow_forward_ios, size: 18),
+                      onTap: () => _showArabicFontDialog(context, settingsProvider),
+                    ),
                   ],
                 ),
               ),
@@ -160,38 +108,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Card(
                 child: Column(
                   children: [
-                    // Web-specific: Request browser notification permission
-                    if (kIsWeb && !_notificationPermissionGranted) ...[
-                      ListTile(
-                        leading: Icon(
-                          Icons.notifications_active_outlined,
-                          color: AppTheme.accentGold,
-                        ),
-                        title: Text(
-                          'Enable Browser Notifications',
-                          style: AppTheme.englishStyle(
-                            fontSize: 16,
-                            color: textColor,
-                          ),
-                        ),
-                        subtitle: Text(
-                          'Allow notifications to receive reminders',
-                          style: AppTheme.englishStyle(
-                            fontSize: 14,
-                            color: subtitleColor,
-                          ),
-                        ),
-                        trailing: ElevatedButton(
-                          onPressed: _requestNotificationPermission,
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: AppTheme.primaryGreen,
-                            foregroundColor: Colors.white,
-                          ),
-                          child: const Text('Allow'),
-                        ),
-                      ),
-                      const Divider(height: 1),
-                    ],
                     SwitchListTile(
                       secondary: Icon(
                         Icons.notifications_outlined,
@@ -204,11 +120,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           color: textColor,
                         ),
                       ),
+                      subtitle: Text(
+                        'Get reminded to read your adhkar',
+                        style: AppTheme.englishStyle(
+                          fontSize: 14,
+                          color: subtitleColor,
+                        ),
+                      ),
                       value: settingsProvider.notificationsEnabled,
                       onChanged: (value) {
-                        if (kIsWeb && value && !_notificationPermissionGranted) {
-                          _requestNotificationPermission();
-                        }
                         settingsProvider.setNotificationsEnabled(value);
                       },
                     ),
@@ -297,7 +217,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           vertical: 8,
                         ),
                         decoration: BoxDecoration(
-                          color: AppTheme.accentGold.withOpacity(0.2),
+                          color: AppTheme.accentGold.withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Text(
@@ -356,7 +276,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ),
                       ),
                       subtitle: Text(
-                        'Version 1.0.0',
+                        'Version 1.1.0',
                         style: AppTheme.englishStyle(
                           fontSize: 14,
                           color: subtitleColor,
@@ -404,7 +324,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         style: AppTheme.englishStyle(
           fontSize: 14,
           fontWeight: FontWeight.w600,
-          color: textColor?.withOpacity(0.6),
+          color: textColor?.withValues(alpha: 0.6),
         ),
       ),
     );
@@ -418,6 +338,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
         return 'Dark';
       case AppThemeMode.system:
         return 'System Default';
+    }
+  }
+
+  String _getArabicFontStyleName(ArabicFontStyle style) {
+    switch (style) {
+      case ArabicFontStyle.nastaliq:
+        return 'Indo-Pak (Nastaliq)';
+      case ArabicFontStyle.naskh:
+        return 'Standard (Naskh)';
     }
   }
 
@@ -449,6 +378,48 @@ class _SettingsScreenState extends State<SettingsScreen> {
               onChanged: (value) {
                 if (value != null) {
                   provider.setThemeMode(value);
+                  Navigator.pop(context);
+                }
+              },
+            );
+          }).toList(),
+        ),
+      ),
+    );
+  }
+
+  void _showArabicFontDialog(BuildContext context, SettingsProvider provider) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(
+          'Arabic Font Style',
+          style: AppTheme.englishStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: ArabicFontStyle.values.map((style) {
+            final fontFamily = style == ArabicFontStyle.nastaliq
+                ? 'NotoNastaliqUrdu'
+                : 'NotoNaskhArabic';
+            return RadioListTile<ArabicFontStyle>(
+              title: Text(_getArabicFontStyleName(style)),
+              subtitle: Text(
+                'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ',
+                style: AppTheme.arabicStyle(
+                  fontSize: 16,
+                  fontFamily: fontFamily,
+                ),
+                textDirection: TextDirection.rtl,
+              ),
+              value: style,
+              groupValue: provider.arabicFontStyle,
+              onChanged: (value) {
+                if (value != null) {
+                  provider.setArabicFontStyle(value);
                   Navigator.pop(context);
                 }
               },

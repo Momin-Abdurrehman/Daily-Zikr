@@ -34,15 +34,18 @@ class AdhkarProvider extends ChangeNotifier {
     _streak = prefs.getInt(AppConstants.keyStreak) ?? 0;
     
     if (lastReset != today && lastReset.isNotEmpty) {
-      // New day - check if YESTERDAY was fully completed (load from prefs)
-      final yesterdayMorning = prefs.getBool(AppConstants.keyMorningCompleted) ?? false;
-      final yesterdayEvening = prefs.getBool(AppConstants.keyEveningCompleted) ?? false;
-      
-      if (yesterdayMorning && yesterdayEvening) {
-        // Yesterday was fully completed - streak already incremented when completed
-        // Just preserve it
+      // Check how many days have passed since last reset
+      final lastResetDate = DateTime.parse(lastReset);
+      final todayDate = DateTime.parse(today);
+      final daysSinceLastReset = todayDate.difference(lastResetDate).inDays;
+
+      final lastMorning = prefs.getBool(AppConstants.keyMorningCompleted) ?? false;
+      final lastEvening = prefs.getBool(AppConstants.keyEveningCompleted) ?? false;
+
+      if (daysSinceLastReset == 1 && lastMorning && lastEvening) {
+        // Exactly yesterday and fully completed - preserve streak
       } else {
-        // Yesterday was not completed, reset streak
+        // Missed a day or last day wasn't completed - reset streak
         _streak = 0;
         await prefs.setInt(AppConstants.keyStreak, 0);
       }

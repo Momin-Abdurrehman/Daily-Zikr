@@ -4,6 +4,8 @@ import 'package:intl/intl.dart';
 import 'package:hijri/hijri_calendar.dart';
 import '../core/theme.dart';
 import '../providers/adhkar_provider.dart';
+import '../providers/settings_provider.dart';
+import '../widgets/daily_hadith_card.dart';
 import 'adhkar_list_screen.dart';
 import 'settings_screen.dart';
 
@@ -38,10 +40,10 @@ class HomeScreen extends StatelessWidget {
           builder: (context, adhkarProvider, child) {
             return CustomScrollView(
               slivers: [
-                // App Bar
+                // App Bar / Greeting Header
                 SliverToBoxAdapter(
                   child: Padding(
-                    padding: const EdgeInsets.all(20),
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 8),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -95,6 +97,14 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
 
+                // Daily Hadith Card - Hero Element
+                const SliverToBoxAdapter(child: SizedBox(height: 12)),
+                const SliverToBoxAdapter(
+                  child: DailyHadithCard(),
+                ),
+
+                const SliverToBoxAdapter(child: SizedBox(height: 16)),
+
                 // Streak Card
                 if (adhkarProvider.streak > 0)
                   SliverToBoxAdapter(
@@ -106,7 +116,7 @@ class HomeScreen extends StatelessWidget {
                           gradient: LinearGradient(
                             colors: [
                               AppTheme.accentGold,
-                              AppTheme.accentGold.withOpacity(0.8),
+                              AppTheme.accentGold.withValues(alpha: 0.8),
                             ],
                           ),
                           borderRadius: BorderRadius.circular(16),
@@ -134,7 +144,7 @@ class HomeScreen extends StatelessWidget {
                                   'Keep up the good work!',
                                   style: AppTheme.englishStyle(
                                     fontSize: 14,
-                                    color: Colors.white.withOpacity(0.9),
+                                    color: Colors.white.withValues(alpha: 0.9),
                                   ),
                                 ),
                               ],
@@ -145,7 +155,20 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
 
-                const SliverToBoxAdapter(child: SizedBox(height: 24)),
+                // Section Label
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(24, 20, 24, 4),
+                    child: Text(
+                      'Your Adhkar',
+                      style: AppTheme.englishStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        color: isDark ? Colors.grey[400] : Colors.grey[600],
+                      ),
+                    ),
+                  ),
+                ),
 
                 // Morning Adhkar Card
                 SliverToBoxAdapter(
@@ -207,34 +230,35 @@ class HomeScreen extends StatelessWidget {
     required VoidCallback onTap,
   }) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final arabicFont = context.watch<SettingsProvider>().arabicFontFamily;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
       child: Card(
         child: InkWell(
           onTap: onTap,
           borderRadius: BorderRadius.circular(16),
           child: Padding(
-            padding: const EdgeInsets.all(24),
+            padding: const EdgeInsets.all(20),
             child: Row(
               children: [
                 Container(
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
                     color: isCompleted
-                        ? AppTheme.lightGreen.withOpacity(0.2)
-                        : Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(16),
+                        ? AppTheme.lightGreen.withValues(alpha: 0.2)
+                        : Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                    borderRadius: BorderRadius.circular(14),
                   ),
                   child: Icon(
                     isCompleted ? Icons.check_circle : icon,
                     color: isCompleted
                         ? AppTheme.lightGreen
                         : Theme.of(context).colorScheme.primary,
-                    size: 32,
+                    size: 28,
                   ),
                 ),
-                const SizedBox(width: 20),
+                const SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -242,7 +266,7 @@ class HomeScreen extends StatelessWidget {
                       Text(
                         title,
                         style: AppTheme.englishStyle(
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.bold,
                           color: isDark ? Colors.white : Colors.black87,
                         ),
@@ -251,8 +275,9 @@ class HomeScreen extends StatelessWidget {
                       Text(
                         subtitle,
                         style: AppTheme.arabicStyle(
-                          fontSize: 18,
+                          fontSize: 16,
                           color: isDark ? Colors.grey[400] : Colors.grey[600],
+                          fontFamily: arabicFont,
                         ),
                       ),
                       const SizedBox(height: 8),
@@ -263,8 +288,8 @@ class HomeScreen extends StatelessWidget {
                         ),
                         decoration: BoxDecoration(
                           color: isCompleted
-                              ? AppTheme.lightGreen.withOpacity(0.1)
-                              : AppTheme.accentGold.withOpacity(0.1),
+                              ? AppTheme.lightGreen.withValues(alpha: 0.1)
+                              : AppTheme.accentGold.withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Text(
@@ -284,7 +309,7 @@ class HomeScreen extends StatelessWidget {
                 Icon(
                   Icons.arrow_forward_ios,
                   color: isDark ? Colors.grey[600] : Colors.grey[400],
-                  size: 20,
+                  size: 18,
                 ),
               ],
             ),

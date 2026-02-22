@@ -1,7 +1,7 @@
 name: daily_zikr
 description: "Morning & Evening Adhkar App - Track your daily remembrances"
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.1.0+2
 
 environment:
   sdk: ^3.10.7
@@ -21,6 +21,7 @@ dependencies:
   # Notifications
   flutter_local_notifications: ^18.0.1
   timezone: ^0.10.0
+  flutter_timezone: ^5.0.0
   
   # UI & Typography
   google_fonts: ^6.2.1
@@ -33,6 +34,25 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.2
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/data/
+
+  fonts:
+    - family: NotoNastaliqUrdu
+      fonts:
+        - asset: assets/fonts/NotoNastaliqUrdu-Regular.ttf
+    - family: NotoNaskhArabic
+      fonts:
+        - asset: assets/fonts/NotoNaskhArabic-Regular.ttf
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "icon.png"
+  adaptive_icon_background: "#1E5631"
+  adaptive_icon_foreground: "icon.png"

@@ -26,7 +26,9 @@ class _DhikrCardState extends State<DhikrCard> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final textColor = isDark ? Colors.white : Colors.black87;
     final subtitleColor = isDark ? Colors.grey[400] : Colors.grey[600];
-    final showTransliteration = context.watch<SettingsProvider>().transliterationEnabled;
+    final settingsProvider = context.watch<SettingsProvider>();
+    final showTransliteration = settingsProvider.transliterationEnabled;
+    final arabicFont = settingsProvider.arabicFontFamily;
 
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -81,6 +83,7 @@ class _DhikrCardState extends State<DhikrCard> {
                 style: AppTheme.arabicStyle(
                   fontSize: 26,
                   color: textColor,
+                  fontFamily: arabicFont,
                 ),
                 textAlign: TextAlign.center,
               ),

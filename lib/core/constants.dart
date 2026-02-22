@@ -9,6 +9,8 @@ class AppConstants {
   static const String keyEveningNotificationTime = 'evening_notification_time';
   static const String keyNotificationsEnabled = 'notifications_enabled';
   static const String keyTransliterationEnabled = 'transliteration_enabled';
+  static const String keyArabicFontStyle = 'arabic_font_style';
+  static const String keyDeviceUuid = 'device_uuid';
 
   // Default Notification Times
   static const int defaultMorningHour = 6; // After Fajr

@@ -16,17 +16,20 @@ class AppTheme {
   static const double englishTextSize = 16.0;
   static const double titleTextSize = 22.0;
 
-  // Arabic Text Style using Amiri font
+  // Arabic Text Style - supports Nastaliq (Indo-Pak) and Naskh (Standard)
   static TextStyle arabicStyle({
     double fontSize = arabicTextSize,
     Color? color,
     FontWeight fontWeight = FontWeight.normal,
+    String fontFamily = 'NotoNastaliqUrdu',
   }) {
-    return GoogleFonts.amiri(
+    final isNastaliq = fontFamily == 'NotoNastaliqUrdu';
+    return TextStyle(
+      fontFamily: fontFamily,
       fontSize: fontSize,
       color: color,
       fontWeight: fontWeight,
-      height: 2.0,
+      height: isNastaliq ? 2.2 : 1.6,
     );
   }
 

@@ -1,0 +1,962 @@
+[
+  {
+    "id": 1,
+    "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللَّهِ وَرَسُولِهِ فَهِجْرَتُهُ إِلَى اللَّهِ وَرَسُولِهِ، وَمَنْ كَانَتْ هِجْرَتُهُ لِدُنْيَا يُصِيبُهَا أَوِ امْرَأَةٍ يَنْكِحُهَا فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ",
+    "english": "Actions are judged by intentions, and every person will get what they intended. So whoever emigrated for the sake of Allah and His Messenger, then his emigration was for Allah and His Messenger. And whoever emigrated for worldly gain or to marry a woman, then his emigration was for what he emigrated for.",
+    "reference": "Sahih al-Bukhari 1",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Umar ibn Al-Khattab"
+  },
+  {
+    "id": 2,
+    "arabic": "بُنِيَ الْإِسْلَامُ عَلَى خَمْسٍ: شَهَادَةِ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، وَإِقَامِ الصَّلَاةِ، وَإِيتَاءِ الزَّكَاةِ، وَحَجِّ الْبَيْتِ، وَصَوْمِ رَمَضَانَ",
+    "english": "Islam is built upon five pillars: testifying that there is no god but Allah and that Muhammad is the Messenger of Allah, establishing prayer, paying Zakat, performing Hajj, and fasting Ramadan.",
+    "reference": "Sahih al-Bukhari 8",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Ibn Umar"
+  },
+  {
+    "id": 3,
+    "arabic": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+    "english": "None of you truly believes until he loves for his brother what he loves for himself.",
+    "reference": "Sahih al-Bukhari 13",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Anas ibn Malik"
+  },
+  {
+    "id": 4,
+    "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيُكْرِمْ جَارَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيُكْرِمْ ضَيْفَهُ",
+    "english": "Whoever believes in Allah and the Last Day, let him speak good or remain silent. Whoever believes in Allah and the Last Day, let him honor his neighbor. Whoever believes in Allah and the Last Day, let him honor his guest.",
+    "reference": "Sahih al-Bukhari 6018",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 5,
+    "arabic": "دَعْ مَا يَرِيبُكَ إِلَى مَا لَا يَرِيبُكَ",
+    "english": "Leave that which makes you doubt for that which does not make you doubt.",
+    "reference": "Jami at-Tirmidhi 2518",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Al-Hasan ibn Ali"
+  },
+  {
+    "id": 6,
+    "arabic": "مِنْ حُسْنِ إِسْلَامِ الْمَرْءِ تَرْكُهُ مَا لَا يَعْنِيهِ",
+    "english": "Part of the perfection of a person's Islam is leaving that which does not concern him.",
+    "reference": "Jami at-Tirmidhi 2317",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 7,
+    "arabic": "لَا ضَرَرَ وَلَا ضِرَارَ",
+    "english": "There should be neither harm nor reciprocal harm.",
+    "reference": "Sunan Ibn Majah 2341",
+    "book": "Sunan Ibn Majah",
+    "narrator": "Narrated by Ibn Abbas"
+  },
+  {
+    "id": 8,
+    "arabic": "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ، وَالْمُهَاجِرُ مَنْ هَجَرَ مَا نَهَى اللَّهُ عَنْهُ",
+    "english": "A Muslim is the one from whose tongue and hand other Muslims are safe. And an emigrant is the one who leaves what Allah has forbidden.",
+    "reference": "Sahih al-Bukhari 10",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abdullah ibn Amr"
+  },
+  {
+    "id": 9,
+    "arabic": "الدِّينُ النَّصِيحَةُ، قُلْنَا: لِمَنْ؟ قَالَ: لِلَّهِ وَلِكِتَابِهِ وَلِرَسُولِهِ وَلِأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ",
+    "english": "The religion is sincerity. We said: To whom? He said: To Allah, His Book, His Messenger, the leaders of the Muslims, and their common folk.",
+    "reference": "Sahih Muslim 55",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Tamim ad-Dari"
+  },
+  {
+    "id": 10,
+    "arabic": "الْحَلَالُ بَيِّنٌ وَالْحَرَامُ بَيِّنٌ، وَبَيْنَهُمَا أُمُورٌ مُشْتَبِهَاتٌ لَا يَعْلَمُهُنَّ كَثِيرٌ مِنَ النَّاسِ، فَمَنِ اتَّقَى الشُّبُهَاتِ فَقَدِ اسْتَبْرَأَ لِدِينِهِ وَعِرْضِهِ",
+    "english": "The lawful is clear and the unlawful is clear, and between them are doubtful matters which many people do not know. Whoever avoids doubtful matters has safeguarded his religion and his honor.",
+    "reference": "Sahih al-Bukhari 52",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by An-Nu'man ibn Bashir"
+  },
+  {
+    "id": 11,
+    "arabic": "إِنَّ اللَّهَ لَا يَنْظُرُ إِلَى صُوَرِكُمْ وَأَمْوَالِكُمْ، وَلَكِنْ يَنْظُرُ إِلَى قُلُوبِكُمْ وَأَعْمَالِكُمْ",
+    "english": "Indeed, Allah does not look at your appearances or your wealth, but He looks at your hearts and your deeds.",
+    "reference": "Sahih Muslim 2564",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 12,
+    "arabic": "مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ",
+    "english": "Whoever takes a path seeking knowledge, Allah will make easy for him a path to Paradise.",
+    "reference": "Sahih Muslim 2699",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 13,
+    "arabic": "الطُّهُورُ شَطْرُ الْإِيمَانِ، وَالْحَمْدُ لِلَّهِ تَمْلَأُ الْمِيزَانَ، وَسُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ تَمْلَآنِ مَا بَيْنَ السَّمَاوَاتِ وَالْأَرْضِ",
+    "english": "Purification is half of faith. Alhamdulillah fills the scales, and SubhanAllah and Alhamdulillah fill what is between the heavens and the earth.",
+    "reference": "Sahih Muslim 223",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Malik al-Ash'ari"
+  },
+  {
+    "id": 14,
+    "arabic": "الْمُؤْمِنُ الْقَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللَّهِ مِنَ الْمُؤْمِنِ الضَّعِيفِ، وَفِي كُلٍّ خَيْرٌ",
+    "english": "The strong believer is better and more beloved to Allah than the weak believer, and in both there is good.",
+    "reference": "Sahih Muslim 2664",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 15,
+    "arabic": "لَا تَحَاسَدُوا، وَلَا تَنَاجَشُوا، وَلَا تَبَاغَضُوا، وَلَا تَدَابَرُوا، وَلَا يَبِعْ بَعْضُكُمْ عَلَى بَيْعِ بَعْضٍ، وَكُونُوا عِبَادَ اللَّهِ إِخْوَانًا",
+    "english": "Do not envy one another, do not inflate prices, do not hate one another, do not turn away from one another, and do not undercut one another in trade. Be, O servants of Allah, brothers.",
+    "reference": "Sahih Muslim 2564",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 16,
+    "arabic": "اتَّقِ اللَّهَ حَيْثُمَا كُنْتَ، وَأَتْبِعِ السَّيِّئَةَ الْحَسَنَةَ تَمْحُهَا، وَخَالِقِ النَّاسَ بِخُلُقٍ حَسَنٍ",
+    "english": "Fear Allah wherever you are, follow a bad deed with a good deed and it will erase it, and treat people with good character.",
+    "reference": "Jami at-Tirmidhi 1987",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Abu Dharr and Mu'adh ibn Jabal"
+  },
+  {
+    "id": 17,
+    "arabic": "مَا مَلَأَ آدَمِيٌّ وِعَاءً شَرًّا مِنْ بَطْنٍ، بِحَسْبِ ابْنِ آدَمَ أُكُلَاتٌ يُقِمْنَ صُلْبَهُ",
+    "english": "No human being has ever filled a vessel worse than his stomach. It is sufficient for a person to eat a few mouthfuls to keep his back straight.",
+    "reference": "Jami at-Tirmidhi 2380",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Al-Miqdam ibn Ma'dikarib"
+  },
+  {
+    "id": 18,
+    "arabic": "انْصُرْ أَخَاكَ ظَالِمًا أَوْ مَظْلُومًا، قَالُوا: يَا رَسُولَ اللَّهِ هَذَا نَنْصُرُهُ مَظْلُومًا، فَكَيْفَ نَنْصُرُهُ ظَالِمًا؟ قَالَ: تَحْجُزُهُ عَنِ الظُّلْمِ، فَإِنَّ ذَلِكَ نَصْرُهُ",
+    "english": "Help your brother whether he is an oppressor or is oppressed. They said: O Messenger of Allah, we help him if he is oppressed, but how do we help him if he is the oppressor? He said: By restraining him from oppression, for that is helping him.",
+    "reference": "Sahih al-Bukhari 6952",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Anas ibn Malik"
+  },
+  {
+    "id": 19,
+    "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلَا يُؤْذِ جَارَهُ",
+    "english": "Whoever believes in Allah and the Last Day, let him not harm his neighbor.",
+    "reference": "Sahih al-Bukhari 6019",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 20,
+    "arabic": "لَا يَشْكُرُ اللَّهَ مَنْ لَا يَشْكُرُ النَّاسَ",
+    "english": "He who does not thank people has not thanked Allah.",
+    "reference": "Sunan Abu Dawud 4811",
+    "book": "Sunan Abu Dawud",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 21,
+    "arabic": "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
+    "english": "The best among you are those who learn the Quran and teach it.",
+    "reference": "Sahih al-Bukhari 5027",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Uthman ibn Affan"
+  },
+  {
+    "id": 22,
+    "arabic": "إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ فِي الْأَمْرِ كُلِّهِ",
+    "english": "Indeed, Allah is gentle and He loves gentleness in all matters.",
+    "reference": "Sahih al-Bukhari 6927",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Aisha"
+  },
+  {
+    "id": 23,
+    "arabic": "الرَّاحِمُونَ يَرْحَمُهُمُ الرَّحْمَنُ، ارْحَمُوا مَنْ فِي الْأَرْضِ يَرْحَمْكُمْ مَنْ فِي السَّمَاءِ",
+    "english": "The merciful are shown mercy by the Most Merciful. Have mercy on those on earth, and the One in the heavens will have mercy on you.",
+    "reference": "Sunan Abu Dawud 4941",
+    "book": "Sunan Abu Dawud",
+    "narrator": "Narrated by Abdullah ibn Amr"
+  },
+  {
+    "id": 24,
+    "arabic": "مَا نَقَصَتْ صَدَقَةٌ مِنْ مَالٍ، وَمَا زَادَ اللَّهُ عَبْدًا بِعَفْوٍ إِلَّا عِزًّا، وَمَا تَوَاضَعَ أَحَدٌ لِلَّهِ إِلَّا رَفَعَهُ اللَّهُ",
+    "english": "Charity does not decrease wealth. Allah does not increase a servant in forgiveness except in honor. And no one humbles himself for the sake of Allah except that Allah raises him.",
+    "reference": "Sahih Muslim 2588",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 25,
+    "arabic": "إِنَّ مِنْ أَحَبِّكُمْ إِلَيَّ وَأَقْرَبِكُمْ مِنِّي مَجْلِسًا يَوْمَ الْقِيَامَةِ أَحَاسِنُكُمْ أَخْلَاقًا",
+    "english": "The most beloved of you to me and the closest of you to me on the Day of Resurrection are those of you with the best character.",
+    "reference": "Jami at-Tirmidhi 2018",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Jabir ibn Abdullah"
+  },
+  {
+    "id": 26,
+    "arabic": "خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ، وَأَنَا خَيْرُكُمْ لِأَهْلِي",
+    "english": "The best of you are the best to their families, and I am the best of you to my family.",
+    "reference": "Jami at-Tirmidhi 3895",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Aisha"
+  },
+  {
+    "id": 27,
+    "arabic": "كُلُّ مُسْلِمٍ عَلَى مُسْلِمٍ حَرَامٌ: دَمُهُ وَمَالُهُ وَعِرْضُهُ",
+    "english": "Every Muslim is sacred to another Muslim: his blood, his wealth, and his honor.",
+    "reference": "Sahih Muslim 2564",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 28,
+    "arabic": "مَنْ كَظَمَ غَيْظًا وَهُوَ قَادِرٌ عَلَى أَنْ يُنْفِذَهُ دَعَاهُ اللَّهُ عَلَى رُؤُوسِ الْخَلَائِقِ يَوْمَ الْقِيَامَةِ حَتَّى يُخَيِّرَهُ فِي أَيِّ الْحُورِ شَاءَ",
+    "english": "Whoever suppresses his anger when he is able to act upon it, Allah will call him before all of creation on the Day of Resurrection and let him choose whichever of the Hur al-Ayn he wishes.",
+    "reference": "Jami at-Tirmidhi 2021",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Mu'adh ibn Anas"
+  },
+  {
+    "id": 29,
+    "arabic": "تَبَسُّمُكَ فِي وَجْهِ أَخِيكَ لَكَ صَدَقَةٌ",
+    "english": "Your smiling in the face of your brother is an act of charity.",
+    "reference": "Jami at-Tirmidhi 1956",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Abu Dharr"
+  },
+  {
+    "id": 30,
+    "arabic": "الْكَلِمَةُ الطَّيِّبَةُ صَدَقَةٌ",
+    "english": "A good word is charity.",
+    "reference": "Sahih al-Bukhari 2989",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 31,
+    "arabic": "مَنْ غَشَّنَا فَلَيْسَ مِنَّا",
+    "english": "Whoever cheats us is not one of us.",
+    "reference": "Sahih Muslim 101",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 32,
+    "arabic": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ",
+    "english": "The strong person is not the one who can wrestle others down. The strong person is the one who can control himself when angry.",
+    "reference": "Sahih al-Bukhari 6114",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 33,
+    "arabic": "لَا تَغْضَبْ",
+    "english": "Do not become angry.",
+    "reference": "Sahih al-Bukhari 6116",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 34,
+    "arabic": "إِنَّ اللَّهَ كَتَبَ الْإِحْسَانَ عَلَى كُلِّ شَيْءٍ",
+    "english": "Indeed, Allah has prescribed excellence in all things.",
+    "reference": "Sahih Muslim 1955",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Shaddad ibn Aws"
+  },
+  {
+    "id": 35,
+    "arabic": "أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا وَإِنْ قَلَّ",
+    "english": "The most beloved deeds to Allah are the most consistent ones, even if they are small.",
+    "reference": "Sahih al-Bukhari 6464",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Aisha"
+  },
+  {
+    "id": 36,
+    "arabic": "الدُّنْيَا سِجْنُ الْمُؤْمِنِ وَجَنَّةُ الْكَافِرِ",
+    "english": "The world is a prison for the believer and a paradise for the disbeliever.",
+    "reference": "Sahih Muslim 2956",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 37,
+    "arabic": "مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ",
+    "english": "When Allah wants good for someone, He gives him understanding of the religion.",
+    "reference": "Sahih al-Bukhari 71",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Mu'awiyah"
+  },
+  {
+    "id": 38,
+    "arabic": "كُلُّكُمْ رَاعٍ وَكُلُّكُمْ مَسْئُولٌ عَنْ رَعِيَّتِهِ",
+    "english": "Every one of you is a guardian and every one of you is responsible for those in his care.",
+    "reference": "Sahih al-Bukhari 7138",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Ibn Umar"
+  },
+  {
+    "id": 39,
+    "arabic": "الْمُسْلِمُ أَخُو الْمُسْلِمِ، لَا يَظْلِمُهُ وَلَا يُسْلِمُهُ",
+    "english": "A Muslim is a brother to another Muslim. He does not oppress him, nor does he abandon him.",
+    "reference": "Sahih al-Bukhari 2442",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Ibn Umar"
+  },
+  {
+    "id": 40,
+    "arabic": "مَنْ سَتَرَ مُسْلِمًا سَتَرَهُ اللَّهُ يَوْمَ الْقِيَامَةِ",
+    "english": "Whoever covers the faults of a Muslim, Allah will cover his faults on the Day of Resurrection.",
+    "reference": "Sahih al-Bukhari 2442",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Ibn Umar"
+  },
+  {
+    "id": 41,
+    "arabic": "مَا بُعِثْتُ إِلَّا لِأُتَمِّمَ مَكَارِمَ الْأَخْلَاقِ",
+    "english": "I was not sent except to perfect good character.",
+    "reference": "Musnad Ahmad 8939",
+    "book": "Musnad Ahmad",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 42,
+    "arabic": "أَكْمَلُ الْمُؤْمِنِينَ إِيمَانًا أَحْسَنُهُمْ خُلُقًا",
+    "english": "The most complete of the believers in faith is the one with the best character.",
+    "reference": "Sunan Abu Dawud 4682",
+    "book": "Sunan Abu Dawud",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 43,
+    "arabic": "الْحَيَاءُ مِنَ الْإِيمَانِ",
+    "english": "Modesty is a part of faith.",
+    "reference": "Sahih al-Bukhari 9",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 44,
+    "arabic": "الْحَيَاءُ لَا يَأْتِي إِلَّا بِخَيْرٍ",
+    "english": "Modesty brings nothing but good.",
+    "reference": "Sahih al-Bukhari 6117",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Imran ibn Husayn"
+  },
+  {
+    "id": 45,
+    "arabic": "مَثَلُ الْمُؤْمِنِينَ فِي تَوَادِّهِمْ وَتَرَاحُمِهِمْ وَتَعَاطُفِهِمْ مَثَلُ الْجَسَدِ، إِذَا اشْتَكَى مِنْهُ عُضْوٌ تَدَاعَى لَهُ سَائِرُ الْجَسَدِ بِالسَّهَرِ وَالْحُمَّى",
+    "english": "The believers in their mutual love, mercy, and compassion are like one body. When one limb aches, the whole body responds with sleeplessness and fever.",
+    "reference": "Sahih Muslim 2586",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by An-Nu'man ibn Bashir"
+  },
+  {
+    "id": 46,
+    "arabic": "مَنْ لَا يَرْحَمُ لَا يُرْحَمُ",
+    "english": "He who does not show mercy will not be shown mercy.",
+    "reference": "Sahih al-Bukhari 5997",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Jarir ibn Abdullah"
+  },
+  {
+    "id": 47,
+    "arabic": "إِيَّاكُمْ وَالظَّنَّ، فَإِنَّ الظَّنَّ أَكْذَبُ الْحَدِيثِ",
+    "english": "Beware of suspicion, for suspicion is the most false of speech.",
+    "reference": "Sahih al-Bukhari 6064",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 48,
+    "arabic": "لَا يَدْخُلُ الْجَنَّةَ مَنْ كَانَ فِي قَلْبِهِ مِثْقَالُ ذَرَّةٍ مِنْ كِبْرٍ",
+    "english": "No one who has an atom's weight of arrogance in his heart will enter Paradise.",
+    "reference": "Sahih Muslim 91",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abdullah ibn Mas'ud"
+  },
+  {
+    "id": 49,
+    "arabic": "مَنْ تَوَاضَعَ لِلَّهِ رَفَعَهُ اللَّهُ",
+    "english": "Whoever humbles himself for the sake of Allah, Allah will raise him.",
+    "reference": "Sahih Muslim 2588",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 50,
+    "arabic": "إِنَّ اللَّهَ لَا يَمَلُّ حَتَّى تَمَلُّوا",
+    "english": "Indeed Allah does not tire (of giving reward) until you tire (of doing good).",
+    "reference": "Sahih al-Bukhari 1151",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Aisha"
+  },
+  {
+    "id": 51,
+    "arabic": "أَفْضَلُ الْجِهَادِ كَلِمَةُ حَقٍّ عِنْدَ سُلْطَانٍ جَائِرٍ",
+    "english": "The best jihad is a word of truth spoken before an unjust ruler.",
+    "reference": "Sunan Abu Dawud 4344",
+    "book": "Sunan Abu Dawud",
+    "narrator": "Narrated by Abu Sa'id al-Khudri"
+  },
+  {
+    "id": 52,
+    "arabic": "طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ",
+    "english": "Seeking knowledge is an obligation upon every Muslim.",
+    "reference": "Sunan Ibn Majah 224",
+    "book": "Sunan Ibn Majah",
+    "narrator": "Narrated by Anas ibn Malik"
+  },
+  {
+    "id": 53,
+    "arabic": "خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ",
+    "english": "The best of people are those who are most beneficial to people.",
+    "reference": "Al-Mu'jam al-Awsat 5787",
+    "book": "Al-Mu'jam al-Awsat",
+    "narrator": "Narrated by Jabir ibn Abdullah"
+  },
+  {
+    "id": 54,
+    "arabic": "مَنْ قَالَ سُبْحَانَ اللَّهِ وَبِحَمْدِهِ فِي يَوْمٍ مِائَةَ مَرَّةٍ حُطَّتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ",
+    "english": "Whoever says 'SubhanAllahi wa bihamdihi' a hundred times a day will have his sins forgiven even if they were like the foam of the sea.",
+    "reference": "Sahih al-Bukhari 6405",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 55,
+    "arabic": "كَلِمَتَانِ خَفِيفَتَانِ عَلَى اللِّسَانِ، ثَقِيلَتَانِ فِي الْمِيزَانِ، حَبِيبَتَانِ إِلَى الرَّحْمَنِ: سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ",
+    "english": "Two words are light on the tongue, heavy on the scales, and beloved to the Most Merciful: SubhanAllahi wa bihamdihi, SubhanAllahil-Azeem.",
+    "reference": "Sahih al-Bukhari 6406",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 56,
+    "arabic": "أَحَبُّ الْكَلَامِ إِلَى اللَّهِ أَرْبَعٌ: سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ",
+    "english": "The most beloved speech to Allah is four phrases: SubhanAllah, Alhamdulillah, La ilaha illallah, and Allahu Akbar.",
+    "reference": "Sahih Muslim 2137",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Samurah ibn Jundub"
+  },
+  {
+    "id": 57,
+    "arabic": "الدُّعَاءُ هُوَ الْعِبَادَةُ",
+    "english": "Supplication is the essence of worship.",
+    "reference": "Jami at-Tirmidhi 3371",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by An-Nu'man ibn Bashir"
+  },
+  {
+    "id": 58,
+    "arabic": "إِنَّ اللَّهَ يُحِبُّ إِذَا عَمِلَ أَحَدُكُمْ عَمَلًا أَنْ يُتْقِنَهُ",
+    "english": "Indeed, Allah loves that when any of you does something, he does it with excellence.",
+    "reference": "Al-Mu'jam al-Awsat 897",
+    "book": "Al-Mu'jam al-Awsat",
+    "narrator": "Narrated by Aisha"
+  },
+  {
+    "id": 59,
+    "arabic": "الْجَنَّةُ تَحْتَ أَقْدَامِ الْأُمَّهَاتِ",
+    "english": "Paradise is at the feet of mothers.",
+    "reference": "Sunan an-Nasai 3104",
+    "book": "Sunan an-Nasai",
+    "narrator": "Narrated by Mu'awiyah ibn Jahimah"
+  },
+  {
+    "id": 60,
+    "arabic": "مَا مِنْ عَبْدٍ يَسْتَغْفِرُ اللَّهَ إِلَّا غَفَرَ اللَّهُ لَهُ",
+    "english": "There is no servant who seeks forgiveness from Allah except that Allah forgives him.",
+    "reference": "Sahih al-Bukhari 7507",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 61,
+    "arabic": "إِنَّ اللَّهَ يَبْسُطُ يَدَهُ بِاللَّيْلِ لِيَتُوبَ مُسِيءُ النَّهَارِ، وَيَبْسُطُ يَدَهُ بِالنَّهَارِ لِيَتُوبَ مُسِيءُ اللَّيْلِ",
+    "english": "Allah extends His hand at night so that the sinner of the day may repent, and He extends His hand during the day so that the sinner of the night may repent.",
+    "reference": "Sahih Muslim 2759",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Musa al-Ash'ari"
+  },
+  {
+    "id": 62,
+    "arabic": "كُلُّ ابْنِ آدَمَ خَطَّاءٌ، وَخَيْرُ الْخَطَّائِينَ التَّوَّابُونَ",
+    "english": "Every son of Adam sins, and the best of sinners are those who repent.",
+    "reference": "Jami at-Tirmidhi 2499",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Anas ibn Malik"
+  },
+  {
+    "id": 63,
+    "arabic": "الصَّبْرُ ضِيَاءٌ",
+    "english": "Patience is illumination.",
+    "reference": "Sahih Muslim 223",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Malik al-Ash'ari"
+  },
+  {
+    "id": 64,
+    "arabic": "مَا أُعْطِيَ أَحَدٌ عَطَاءً خَيْرًا وَأَوْسَعَ مِنَ الصَّبْرِ",
+    "english": "No one has been given a gift better and more encompassing than patience.",
+    "reference": "Sahih al-Bukhari 1469",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Sa'id al-Khudri"
+  },
+  {
+    "id": 65,
+    "arabic": "عَجَبًا لِأَمْرِ الْمُؤْمِنِ، إِنَّ أَمْرَهُ كُلَّهُ خَيْرٌ، وَلَيْسَ ذَاكَ لِأَحَدٍ إِلَّا لِلْمُؤْمِنِ، إِنْ أَصَابَتْهُ سَرَّاءُ شَكَرَ فَكَانَ خَيْرًا لَهُ، وَإِنْ أَصَابَتْهُ ضَرَّاءُ صَبَرَ فَكَانَ خَيْرًا لَهُ",
+    "english": "How wonderful is the affair of the believer, for all his affairs are good. This is only for the believer. If something good happens to him, he is grateful and that is good for him. If something bad happens to him, he is patient and that is good for him.",
+    "reference": "Sahih Muslim 2999",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Suhayb"
+  },
+  {
+    "id": 66,
+    "arabic": "يَسِّرُوا وَلَا تُعَسِّرُوا، وَبَشِّرُوا وَلَا تُنَفِّرُوا",
+    "english": "Make things easy and do not make them difficult. Give good news and do not drive people away.",
+    "reference": "Sahih al-Bukhari 69",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Anas ibn Malik"
+  },
+  {
+    "id": 67,
+    "arabic": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+    "english": "Indeed, with hardship comes ease.",
+    "reference": "Sahih Muslim 2999",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by the Prophet (peace be upon him)"
+  },
+  {
+    "id": 68,
+    "arabic": "مَنْ نَفَّسَ عَنْ مُؤْمِنٍ كُرْبَةً مِنْ كُرَبِ الدُّنْيَا نَفَّسَ اللَّهُ عَنْهُ كُرْبَةً مِنْ كُرَبِ يَوْمِ الْقِيَامَةِ",
+    "english": "Whoever relieves a believer of a hardship of this world, Allah will relieve him of a hardship of the Day of Resurrection.",
+    "reference": "Sahih Muslim 2699",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 69,
+    "arabic": "وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ",
+    "english": "Allah is in the aid of the servant as long as the servant is in the aid of his brother.",
+    "reference": "Sahih Muslim 2699",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 70,
+    "arabic": "مَنْ صَلَّى الْبَرْدَيْنِ دَخَلَ الْجَنَّةَ",
+    "english": "Whoever prays the two cool prayers (Fajr and Asr) will enter Paradise.",
+    "reference": "Sahih al-Bukhari 574",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Musa al-Ash'ari"
+  },
+  {
+    "id": 71,
+    "arabic": "اسْتَقِمْ وَلَا تُحْصِ",
+    "english": "Be steadfast and do not keep count (of your good deeds expecting reward).",
+    "reference": "Sahih Muslim 2170",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by the Prophet (peace be upon him)"
+  },
+  {
+    "id": 72,
+    "arabic": "الصَّلَاةُ نُورٌ، وَالصَّدَقَةُ بُرْهَانٌ، وَالصَّبْرُ ضِيَاءٌ، وَالْقُرْآنُ حُجَّةٌ لَكَ أَوْ عَلَيْكَ",
+    "english": "Prayer is a light, charity is a proof, patience is illumination, and the Quran is an argument for or against you.",
+    "reference": "Sahih Muslim 223",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Malik al-Ash'ari"
+  },
+  {
+    "id": 73,
+    "arabic": "مَنْ قَرَأَ حَرْفًا مِنْ كِتَابِ اللَّهِ فَلَهُ بِهِ حَسَنَةٌ، وَالْحَسَنَةُ بِعَشْرِ أَمْثَالِهَا",
+    "english": "Whoever recites a letter from the Book of Allah will receive a good deed, and each good deed is multiplied by ten.",
+    "reference": "Jami at-Tirmidhi 2910",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Abdullah ibn Mas'ud"
+  },
+  {
+    "id": 74,
+    "arabic": "مَنْ صَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ",
+    "english": "Whoever fasts Ramadan out of faith and seeking reward, his previous sins will be forgiven.",
+    "reference": "Sahih al-Bukhari 38",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 75,
+    "arabic": "مَنْ قَامَ لَيْلَةَ الْقَدْرِ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ",
+    "english": "Whoever stands in prayer on the Night of Decree out of faith and seeking reward, his previous sins will be forgiven.",
+    "reference": "Sahih al-Bukhari 35",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 76,
+    "arabic": "الصِّيَامُ جُنَّةٌ",
+    "english": "Fasting is a shield.",
+    "reference": "Sahih al-Bukhari 1894",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 77,
+    "arabic": "مَنْ صَلَّى عَلَيَّ صَلَاةً صَلَّى اللَّهُ عَلَيْهِ بِهَا عَشْرًا",
+    "english": "Whoever sends blessings upon me once, Allah will send blessings upon him tenfold.",
+    "reference": "Sahih Muslim 408",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 78,
+    "arabic": "أَقْرَبُ مَا يَكُونُ الْعَبْدُ مِنْ رَبِّهِ وَهُوَ سَاجِدٌ، فَأَكْثِرُوا الدُّعَاءَ",
+    "english": "The closest a servant is to his Lord is when he is prostrating, so increase your supplication.",
+    "reference": "Sahih Muslim 482",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 79,
+    "arabic": "إِذَا مَاتَ الْإِنْسَانُ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ",
+    "english": "When a person dies, his deeds come to an end except for three: ongoing charity, knowledge that is benefited from, or a righteous child who prays for him.",
+    "reference": "Sahih Muslim 1631",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 80,
+    "arabic": "مَنْ بَنَى مَسْجِدًا لِلَّهِ بَنَى اللَّهُ لَهُ مِثْلَهُ فِي الْجَنَّةِ",
+    "english": "Whoever builds a mosque for the sake of Allah, Allah will build for him a similar one in Paradise.",
+    "reference": "Sahih al-Bukhari 450",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Uthman ibn Affan"
+  },
+  {
+    "id": 81,
+    "arabic": "إِنَّ الصِّدْقَ يَهْدِي إِلَى الْبِرِّ، وَإِنَّ الْبِرَّ يَهْدِي إِلَى الْجَنَّةِ",
+    "english": "Indeed, truthfulness leads to righteousness, and righteousness leads to Paradise.",
+    "reference": "Sahih al-Bukhari 6094",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abdullah ibn Mas'ud"
+  },
+  {
+    "id": 82,
+    "arabic": "وَإِنَّ الْكَذِبَ يَهْدِي إِلَى الْفُجُورِ، وَإِنَّ الْفُجُورَ يَهْدِي إِلَى النَّارِ",
+    "english": "Indeed, lying leads to wickedness, and wickedness leads to the Fire.",
+    "reference": "Sahih al-Bukhari 6094",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abdullah ibn Mas'ud"
+  },
+  {
+    "id": 83,
+    "arabic": "مَنْ كَانَ آخِرُ كَلَامِهِ لَا إِلَهَ إِلَّا اللَّهُ دَخَلَ الْجَنَّةَ",
+    "english": "Whoever's last words are 'La ilaha illallah' will enter Paradise.",
+    "reference": "Sunan Abu Dawud 3116",
+    "book": "Sunan Abu Dawud",
+    "narrator": "Narrated by Mu'adh ibn Jabal"
+  },
+  {
+    "id": 84,
+    "arabic": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+    "english": "O Allah, help me in remembering You, being grateful to You, and worshipping You in the best manner.",
+    "reference": "Sunan Abu Dawud 1522",
+    "book": "Sunan Abu Dawud",
+    "narrator": "Narrated by Mu'adh ibn Jabal"
+  },
+  {
+    "id": 85,
+    "arabic": "الْيَدُ الْعُلْيَا خَيْرٌ مِنَ الْيَدِ السُّفْلَى",
+    "english": "The upper hand (the giving hand) is better than the lower hand (the receiving hand).",
+    "reference": "Sahih al-Bukhari 1427",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Ibn Umar"
+  },
+  {
+    "id": 86,
+    "arabic": "أَفْضَلُ الصَّدَقَةِ أَنْ تُطْعِمَ",
+    "english": "The best charity is to feed others.",
+    "reference": "Musnad Ahmad 17333",
+    "book": "Musnad Ahmad",
+    "narrator": "Narrated by Abdullah ibn Amr"
+  },
+  {
+    "id": 87,
+    "arabic": "اتَّقُوا النَّارَ وَلَوْ بِشِقِّ تَمْرَةٍ",
+    "english": "Protect yourselves from the Fire even if with half a date (in charity).",
+    "reference": "Sahih al-Bukhari 1417",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Adi ibn Hatim"
+  },
+  {
+    "id": 88,
+    "arabic": "مَا آمَنَ بِي مَنْ بَاتَ شَبْعَانَ وَجَارُهُ جَائِعٌ إِلَى جَنْبِهِ وَهُوَ يَعْلَمُ بِهِ",
+    "english": "He has not believed in me who sleeps while his stomach is full and his neighbor beside him is hungry, and he knows about it.",
+    "reference": "Al-Mu'jam al-Kabir 751",
+    "book": "Al-Mu'jam al-Kabir",
+    "narrator": "Narrated by Anas ibn Malik"
+  },
+  {
+    "id": 89,
+    "arabic": "إِنَّمَا بُعِثْتُمْ مُيَسِّرِينَ وَلَمْ تُبْعَثُوا مُعَسِّرِينَ",
+    "english": "You have been sent to make things easy, not to make things difficult.",
+    "reference": "Sahih al-Bukhari 6128",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 90,
+    "arabic": "إِنَّ اللَّهَ جَمِيلٌ يُحِبُّ الْجَمَالَ",
+    "english": "Indeed, Allah is beautiful and He loves beauty.",
+    "reference": "Sahih Muslim 91",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abdullah ibn Mas'ud"
+  },
+  {
+    "id": 91,
+    "arabic": "مَثَلُ الَّذِي يَذْكُرُ رَبَّهُ وَالَّذِي لَا يَذْكُرُ رَبَّهُ مَثَلُ الْحَيِّ وَالْمَيِّتِ",
+    "english": "The example of the one who remembers his Lord and the one who does not remember his Lord is like the example of the living and the dead.",
+    "reference": "Sahih al-Bukhari 6407",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Musa al-Ash'ari"
+  },
+  {
+    "id": 92,
+    "arabic": "مَنْ قَالَ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ فِي يَوْمٍ مِائَةَ مَرَّةٍ كَانَتْ لَهُ عَدْلَ عَشْرِ رِقَابٍ",
+    "english": "Whoever says 'La ilaha illallah wahdahu la sharika lah, lahul-mulku wa lahul-hamd, wa huwa ala kulli shay'in qadir' a hundred times a day, it will be as if he freed ten slaves.",
+    "reference": "Sahih al-Bukhari 6403",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 93,
+    "arabic": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ كَنْزٌ مِنْ كُنُوزِ الْجَنَّةِ",
+    "english": "La hawla wa la quwwata illa billah is a treasure from the treasures of Paradise.",
+    "reference": "Sahih al-Bukhari 4205",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Musa al-Ash'ari"
+  },
+  {
+    "id": 94,
+    "arabic": "الْإِيمَانُ بِضْعٌ وَسَبْعُونَ شُعْبَةً، فَأَفْضَلُهَا قَوْلُ لَا إِلَهَ إِلَّا اللَّهُ، وَأَدْنَاهَا إِمَاطَةُ الْأَذَى عَنِ الطَّرِيقِ، وَالْحَيَاءُ شُعْبَةٌ مِنَ الْإِيمَانِ",
+    "english": "Faith has seventy-odd branches. The highest is the declaration that there is no god but Allah, and the lowest is removing something harmful from the road. And modesty is a branch of faith.",
+    "reference": "Sahih Muslim 35",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 95,
+    "arabic": "لَا تَدْخُلُونَ الْجَنَّةَ حَتَّى تُؤْمِنُوا، وَلَا تُؤْمِنُوا حَتَّى تَحَابُّوا",
+    "english": "You will not enter Paradise until you believe, and you will not believe until you love one another.",
+    "reference": "Sahih Muslim 54",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 96,
+    "arabic": "أَوَلَا أَدُلُّكُمْ عَلَى شَيْءٍ إِذَا فَعَلْتُمُوهُ تَحَابَبْتُمْ؟ أَفْشُوا السَّلَامَ بَيْنَكُمْ",
+    "english": "Shall I not tell you of something which, if you do it, you will love one another? Spread the greeting of peace among you.",
+    "reference": "Sahih Muslim 54",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 97,
+    "arabic": "لَا يَحِلُّ لِمُسْلِمٍ أَنْ يَهْجُرَ أَخَاهُ فَوْقَ ثَلَاثِ لَيَالٍ",
+    "english": "It is not permissible for a Muslim to shun his brother for more than three nights.",
+    "reference": "Sahih al-Bukhari 6077",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Ayyub al-Ansari"
+  },
+  {
+    "id": 98,
+    "arabic": "مَنْ أَحَبَّ أَنْ يُبْسَطَ لَهُ فِي رِزْقِهِ وَيُنْسَأَ لَهُ فِي أَثَرِهِ فَلْيَصِلْ رَحِمَهُ",
+    "english": "Whoever loves that his provision be increased and his life be extended, then let him maintain ties of kinship.",
+    "reference": "Sahih al-Bukhari 5986",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Anas ibn Malik"
+  },
+  {
+    "id": 99,
+    "arabic": "لَيْسَ الْوَاصِلُ بِالْمُكَافِئِ، وَلَكِنِ الْوَاصِلُ الَّذِي إِذَا قُطِعَتْ رَحِمُهُ وَصَلَهَا",
+    "english": "The one who maintains ties of kinship is not the one who reciprocates. Rather, it is the one who, when his relatives cut him off, maintains ties with them.",
+    "reference": "Sahih al-Bukhari 5991",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abdullah ibn Amr"
+  },
+  {
+    "id": 100,
+    "arabic": "إِنَّ مِنْ أَفْضَلِ أَيَّامِكُمْ يَوْمَ الْجُمُعَةِ، فَأَكْثِرُوا عَلَيَّ مِنَ الصَّلَاةِ فِيهِ",
+    "english": "Among the best of your days is Friday, so increase in sending blessings upon me on that day.",
+    "reference": "Sunan Abu Dawud 1047",
+    "book": "Sunan Abu Dawud",
+    "narrator": "Narrated by Aws ibn Aws"
+  },
+  {
+    "id": 101,
+    "arabic": "إِذَا دَعَا أَحَدُكُمْ فَلَا يَقُلْ: اللَّهُمَّ اغْفِرْ لِي إِنْ شِئْتَ، وَلَكِنْ لِيَعْزِمِ الْمَسْأَلَةَ",
+    "english": "When any of you supplicates, do not say: 'O Allah, forgive me if You will,' rather be firm and resolute in your asking.",
+    "reference": "Sahih al-Bukhari 6339",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 102,
+    "arabic": "مَنْ حَفِظَ عَشْرَ آيَاتٍ مِنْ أَوَّلِ سُورَةِ الْكَهْفِ عُصِمَ مِنَ الدَّجَّالِ",
+    "english": "Whoever memorizes ten verses from the beginning of Surah al-Kahf will be protected from the Dajjal.",
+    "reference": "Sahih Muslim 809",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu ad-Darda"
+  },
+  {
+    "id": 103,
+    "arabic": "أَحَبُّ الصِّيَامِ إِلَى اللَّهِ صِيَامُ دَاوُدَ: كَانَ يَصُومُ يَوْمًا وَيُفْطِرُ يَوْمًا",
+    "english": "The most beloved fasting to Allah is the fasting of Dawud: he would fast one day and break his fast the next.",
+    "reference": "Sahih al-Bukhari 1131",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abdullah ibn Amr"
+  },
+  {
+    "id": 104,
+    "arabic": "إِذَا سَمِعْتُمُ الْمُؤَذِّنَ فَقُولُوا مِثْلَ مَا يَقُولُ",
+    "english": "When you hear the mu'adhdhin, say what he says.",
+    "reference": "Sahih al-Bukhari 611",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Sa'id al-Khudri"
+  },
+  {
+    "id": 105,
+    "arabic": "الْمُتَحَابُّونَ فِي جَلَالِي لَهُمْ مَنَابِرُ مِنْ نُورٍ يَغْبِطُهُمُ النَّبِيُّونَ وَالشُّهَدَاءُ",
+    "english": "Those who love one another for the sake of My Majesty shall have pulpits of light, and the Prophets and martyrs will envy them.",
+    "reference": "Jami at-Tirmidhi 2390",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Mu'adh ibn Jabal"
+  },
+  {
+    "id": 106,
+    "arabic": "أَحَبُّ النَّاسِ إِلَى اللَّهِ أَنْفَعُهُمْ لِلنَّاسِ",
+    "english": "The most beloved people to Allah are those who are most beneficial to people.",
+    "reference": "Al-Mu'jam al-Awsat 6026",
+    "book": "Al-Mu'jam al-Awsat",
+    "narrator": "Narrated by Ibn Umar"
+  },
+  {
+    "id": 107,
+    "arabic": "إِنَّ لِرَبِّكُمْ فِي أَيَّامِ دَهْرِكُمْ نَفَحَاتٍ فَتَعَرَّضُوا لَهَا",
+    "english": "Your Lord has breezes of mercy in the days of your life, so expose yourselves to them.",
+    "reference": "Al-Mu'jam al-Kabir 720",
+    "book": "Al-Mu'jam al-Kabir",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 108,
+    "arabic": "مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ",
+    "english": "Whoever guides someone to a good deed will receive the same reward as the one who does it.",
+    "reference": "Sahih Muslim 1893",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Mas'ud al-Ansari"
+  },
+  {
+    "id": 109,
+    "arabic": "الْمُتَبَايِعَانِ بِالْخِيَارِ مَا لَمْ يَتَفَرَّقَا، فَإِنْ صَدَقَا وَبَيَّنَا بُورِكَ لَهُمَا فِي بَيْعِهِمَا، وَإِنْ كَتَمَا وَكَذَبَا مُحِقَتْ بَرَكَةُ بَيْعِهِمَا",
+    "english": "The buyer and seller have the option of cancelling as long as they have not separated. If they are truthful and transparent, their transaction will be blessed. If they conceal and lie, the blessing of their transaction will be erased.",
+    "reference": "Sahih al-Bukhari 2079",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Hakim ibn Hizam"
+  },
+  {
+    "id": 110,
+    "arabic": "ازْهَدْ فِي الدُّنْيَا يُحِبَّكَ اللَّهُ، وَازْهَدْ فِيمَا عِنْدَ النَّاسِ يُحِبَّكَ النَّاسُ",
+    "english": "Be detached from the world and Allah will love you. Be detached from what people have and people will love you.",
+    "reference": "Sunan Ibn Majah 4102",
+    "book": "Sunan Ibn Majah",
+    "narrator": "Narrated by Sahl ibn Sa'd"
+  },
+  {
+    "id": 111,
+    "arabic": "كُنْ فِي الدُّنْيَا كَأَنَّكَ غَرِيبٌ أَوْ عَابِرُ سَبِيلٍ",
+    "english": "Be in this world as if you were a stranger or a traveler.",
+    "reference": "Sahih al-Bukhari 6416",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Ibn Umar"
+  },
+  {
+    "id": 112,
+    "arabic": "انْظُرُوا إِلَى مَنْ هُوَ أَسْفَلَ مِنْكُمْ، وَلَا تَنْظُرُوا إِلَى مَنْ هُوَ فَوْقَكُمْ، فَهُوَ أَجْدَرُ أَنْ لَا تَزْدَرُوا نِعْمَةَ اللَّهِ عَلَيْكُمْ",
+    "english": "Look at those below you and do not look at those above you, for that is more likely to prevent you from belittling the blessings of Allah upon you.",
+    "reference": "Sahih Muslim 2963",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 113,
+    "arabic": "أَحَبُّ الصَّلَاةِ إِلَى اللَّهِ صَلَاةُ دَاوُدَ: كَانَ يَنَامُ نِصْفَ اللَّيْلِ، وَيَقُومُ ثُلُثَهُ، وَيَنَامُ سُدُسَهُ",
+    "english": "The most beloved prayer to Allah is the prayer of Dawud: he would sleep half the night, stand in prayer for a third, and sleep for a sixth.",
+    "reference": "Sahih al-Bukhari 1131",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abdullah ibn Amr"
+  },
+  {
+    "id": 114,
+    "arabic": "إِذَا أَوَى أَحَدُكُمْ إِلَى فِرَاشِهِ فَلْيَنْفُضْ فِرَاشَهُ بِدَاخِلَةِ إِزَارِهِ فَإِنَّهُ لَا يَدْرِي مَا خَلَفَهُ عَلَيْهِ",
+    "english": "When any of you goes to his bed, let him brush off his bed with the inside of his lower garment, for he does not know what may have come onto it after he left it.",
+    "reference": "Sahih al-Bukhari 6320",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 115,
+    "arabic": "مَنْ أَكَلَ ثُومًا أَوْ بَصَلًا فَلْيَعْتَزِلْنَا أَوْ لِيَعْتَزِلْ مَسْجِدَنَا",
+    "english": "Whoever eats garlic or onion, let him stay away from us or from our mosque.",
+    "reference": "Sahih al-Bukhari 855",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Jabir ibn Abdullah"
+  },
+  {
+    "id": 116,
+    "arabic": "مَنْ لَمْ يَدَعْ قَوْلَ الزُّورِ وَالْعَمَلَ بِهِ فَلَيْسَ لِلَّهِ حَاجَةٌ فِي أَنْ يَدَعَ طَعَامَهُ وَشَرَابَهُ",
+    "english": "Whoever does not give up false speech and acting upon it, Allah has no need of his giving up food and drink.",
+    "reference": "Sahih al-Bukhari 1903",
+    "book": "Sahih al-Bukhari",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 117,
+    "arabic": "مَنْ صَلَّى الْفَجْرَ فِي جَمَاعَةٍ ثُمَّ قَعَدَ يَذْكُرُ اللَّهَ حَتَّى تَطْلُعَ الشَّمْسُ ثُمَّ صَلَّى رَكْعَتَيْنِ كَانَتْ لَهُ كَأَجْرِ حَجَّةٍ وَعُمْرَةٍ تَامَّةٍ تَامَّةٍ تَامَّةٍ",
+    "english": "Whoever prays Fajr in congregation then sits remembering Allah until the sun rises, then prays two rak'ahs, will have a reward like that of a complete Hajj and Umrah.",
+    "reference": "Jami at-Tirmidhi 586",
+    "book": "Jami at-Tirmidhi",
+    "narrator": "Narrated by Anas ibn Malik"
+  },
+  {
+    "id": 118,
+    "arabic": "الصَّلَوَاتُ الْخَمْسُ، وَالْجُمُعَةُ إِلَى الْجُمُعَةِ، وَرَمَضَانُ إِلَى رَمَضَانَ مُكَفِّرَاتٌ مَا بَيْنَهُنَّ إِذَا اجْتُنِبَتِ الْكَبَائِرُ",
+    "english": "The five daily prayers, Friday to Friday, and Ramadan to Ramadan are expiation for what is between them, as long as major sins are avoided.",
+    "reference": "Sahih Muslim 233",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  },
+  {
+    "id": 119,
+    "arabic": "اقْرَؤُوا الْقُرْآنَ فَإِنَّهُ يَأْتِي يَوْمَ الْقِيَامَةِ شَفِيعًا لِأَصْحَابِهِ",
+    "english": "Recite the Quran, for it will come on the Day of Resurrection as an intercessor for its companions.",
+    "reference": "Sahih Muslim 804",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Umamah"
+  },
+  {
+    "id": 120,
+    "arabic": "لَا تَجْعَلُوا بُيُوتَكُمْ مَقَابِرَ، إِنَّ الشَّيْطَانَ يَنْفِرُ مِنَ الْبَيْتِ الَّذِي تُقْرَأُ فِيهِ سُورَةُ الْبَقَرَةِ",
+    "english": "Do not turn your houses into graveyards. Indeed, Shaytan flees from a house in which Surah al-Baqarah is recited.",
+    "reference": "Sahih Muslim 780",
+    "book": "Sahih Muslim",
+    "narrator": "Narrated by Abu Hurairah"
+  }
+]

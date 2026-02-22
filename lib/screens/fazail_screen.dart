@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../core/theme.dart';
 import '../data/adhkar_data.dart';
 import '../models/dhikr.dart';
+import '../providers/settings_provider.dart';
 
 class FazailScreen extends StatefulWidget {
   const FazailScreen({super.key});
@@ -85,6 +87,7 @@ class _FazailCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final textColor = isDark ? Colors.white : Colors.black87;
     final subtitleColor = isDark ? Colors.grey[400] : Colors.grey[600];
+    final arabicFont = context.watch<SettingsProvider>().arabicFontFamily;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
@@ -95,7 +98,7 @@ class _FazailCard extends StatelessWidget {
           width: 40,
           height: 40,
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(12),
           ),
           child: Center(
@@ -114,6 +117,7 @@ class _FazailCard extends StatelessWidget {
           style: AppTheme.arabicStyle(
             fontSize: 18,
             color: textColor,
+            fontFamily: arabicFont,
           ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
@@ -135,7 +139,7 @@ class _FazailCard extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+              color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Directionality(
@@ -145,6 +149,7 @@ class _FazailCard extends StatelessWidget {
                 style: AppTheme.arabicStyle(
                   fontSize: 20,
                   color: textColor,
+                  fontFamily: arabicFont,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -165,7 +170,7 @@ class _FazailCard extends StatelessWidget {
 
           const SizedBox(height: 16),
           
-          Divider(color: subtitleColor?.withOpacity(0.3)),
+          Divider(color: subtitleColor?.withValues(alpha: 0.3)),
           
           const SizedBox(height: 16),
 
@@ -173,10 +178,10 @@ class _FazailCard extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: AppTheme.accentGold.withOpacity(0.1),
+              color: AppTheme.accentGold.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: AppTheme.accentGold.withOpacity(0.3),
+                color: AppTheme.accentGold.withValues(alpha: 0.3),
               ),
             ),
             child: Column(
