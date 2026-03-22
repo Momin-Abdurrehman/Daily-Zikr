@@ -29,9 +29,35 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
     ),
 
-    // 3. Surah Al-Falaq
+    // 3. Dua of Yunus
     Dhikr(
       id: 'morning_3',
+      title: 'Du\'a of Yunus',
+      arabicText: '''لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ''',
+      transliteration: 'La ilaha illa anta subhanaka inni kuntu minaz-zalimin',
+      englishTranslation: 'There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.',
+      repetitions: 1,
+      category: 'morning',
+      fazail: 'No Muslim man supplicates with it for anything, ever, except Allah responds to him.',
+      reference: 'Jami\' at-Tirmidhi (3505)',
+    ),
+
+    // 4. Bismillah protection dua
+    Dhikr(
+      id: 'morning_4',
+      title: 'Protection from Harm',
+      arabicText: '''بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ''',
+      transliteration: 'Bismillahil-ladhi la yadurru ma\'as-mihi shai\'un fil-ardi wa la fis-sama\'i, wa Huwas-Sami\'ul-\'Alim',
+      englishTranslation: 'In the Name of Allah with Whose Name there is protection against every kind of harm in the earth or in the heaven, and He is the All-Hearing and All-Knowing.',
+      repetitions: 3,
+      category: 'morning',
+      fazail: 'He who recites this three times every morning and evening, nothing will harm him.',
+      reference: 'Riyad as-Salihin (1457)',
+    ),
+
+    // 5. Surah Al-Falaq
+    Dhikr(
+      id: 'morning_5',
       title: 'Surah Al-Falaq',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ''',
@@ -43,9 +69,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
     ),
 
-    // 4. Surah An-Nas
+    // 6. Surah An-Nas
     Dhikr(
-      id: 'morning_4',
+      id: 'morning_6',
       title: 'Surah An-Nas',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلَٰهِ النَّاسِ ۝ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ''',
@@ -57,9 +83,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
     ),
 
-    // 5. Morning dua - Asbahna
+    // 7. Morning dua - Asbahna
     Dhikr(
-      id: 'morning_5',
+      id: 'morning_7',
       title: 'Morning Supplication',
       arabicText: '''أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ''',
       transliteration: 'Asbahna wa asbahal-mulku lillah, walhamdu lillah, la ilaha illallahu wahdahu la shareeka lah, lahul-mulku wa lahul-hamd, wa huwa \'ala kulli shay\'in qadeer...',
@@ -70,9 +96,9 @@ class AdhkarData {
       reference: 'Sahih Muslim (2723); Narrated by Abdullah ibn Mas\'ud',
     ),
 
-    // 6. Allahumma bika asbahna
+    // 8. Allahumma bika asbahna
     Dhikr(
-      id: 'morning_6',
+      id: 'morning_8',
       title: 'Affirming Life & Death',
       arabicText: '''اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ''',
       transliteration: 'Allahumma bika asbahna, wa bika amsayna, wa bika nahya, wa bika namutu, wa ilaykan-nushur',
@@ -83,9 +109,9 @@ class AdhkarData {
       reference: 'Jami\' at-Tirmidhi (3391); Sunan Abu Dawud (5068); Narrated by Abu Hurairah; Sahih by Al-Albani',
     ),
 
-    // 7. Allahumma inni asbahtu ush'hiduka
+    // 9. Allahumma inni asbahtu ush'hiduka
     Dhikr(
-      id: 'morning_7',
+      id: 'morning_9',
       title: 'Declaration of Faith',
       arabicText: '''اللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلَائِكَتَكَ، وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ''',
       transliteration: 'Allahumma inni asbahtu ush\'hiduka, wa ush\'hidu hamalata \'arshika, wa mala\'ikatika, wa jamee\'a khalqika, annaka antallahu la ilaha illa anta wahdaka la shareeka lak, wa anna Muhammadan \'abduka wa rasuluk',
@@ -96,9 +122,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5069); Al-Bukhari, Al-Adab Al-Mufrad (1201); Narrated by Anas bin Malik; Hasan',
     ),
 
-    // 8. Raditu billahi rabba
+    // 10. Raditu billahi rabba
     Dhikr(
-      id: 'morning_8',
+      id: 'morning_10',
       title: 'Contentment with Allah',
       arabicText: '''رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا''',
       transliteration: 'Raditu billahi rabba, wa bil-islami deena, wa bi-Muhammadin sallallahu \'alayhi wa sallama nabiyya',
@@ -109,9 +135,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5072); Sunan Ibn Majah (3870); Narrated by Thawban; Sahih by Al-Albani',
     ),
 
-    // 9. Ya Hayyu Ya Qayyum
+    // 11. Ya Hayyu Ya Qayyum
     Dhikr(
-      id: 'morning_9',
+      id: 'morning_11',
       title: 'Ya Hayyu Ya Qayyum',
       arabicText: '''يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ''',
       transliteration: 'Ya Hayyu Ya Qayyum, bi-rahmatika astaghith, aslih li sha\'ni kullahu, wa la takilni ila nafsi tarfata \'ayn',
@@ -122,9 +148,9 @@ class AdhkarData {
       reference: 'Al-Hakim, Al-Mustadrak (1/545); An-Nasai, As-Sunan Al-Kubra (10330); Narrated by Anas bin Malik; Hasan by Al-Albani in Sahih al-Jami\' (4777)',
     ),
 
-    // 10. Allahumma 'afini fi badani
+    // 12. Allahumma 'afini fi badani
     Dhikr(
-      id: 'morning_10',
+      id: 'morning_12',
       title: 'Dua for Health & Protection',
       arabicText: '''اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَٰهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَٰهَ إِلَّا أَنْتَ''',
       transliteration: 'Allahumma \'afini fi badani, Allahumma \'afini fi sam\'i, Allahumma \'afini fi basari, la ilaha illa ant. Allahumma inni a\'udhu bika minal-kufri, wal-faqr, wa a\'udhu bika min \'adhabil-qabr, la ilaha illa ant',
@@ -135,9 +161,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5090); Al-Adab Al-Mufrad (701); An-Nasa\'i Al-Kubra (10401); Narrated by Abdur-Rahman bin Abi Bakrah; Hasan by Al-Albani',
     ),
 
-    // 11. Hasbiyallahu la ilaha illa hu
+    // 13. Hasbiyallahu la ilaha illa hu
     Dhikr(
-      id: 'morning_11',
+      id: 'morning_13',
       title: 'Reliance on Allah',
       arabicText: '''حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ، عَلَيْهِ تَوَكَّلْتُ، وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ''',
       transliteration: 'Hasbiyallahu la ilaha illa huwa, \'alayhi tawakkaltu, wa huwa rabbul-\'arshil-\'azeem',
@@ -148,9 +174,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5081); Narrated by Abu ad-Darda; Mawquf with ruling of Marfu\'',
     ),
 
-    // 12. SubhanAllah wa bihamdihi
+    // 14. SubhanAllah wa bihamdihi
     Dhikr(
-      id: 'morning_12',
+      id: 'morning_14',
       title: 'SubhanAllah wa bihamdihi',
       arabicText: '''سُبْحَانَ اللَّهِ وَبِحَمْدِهِ''',
       transliteration: 'SubhanAllahi wa bihamdihi',
@@ -161,9 +187,9 @@ class AdhkarData {
       reference: 'Sahih Muslim (2692); Narrated by Abu Hurairah',
     ),
 
-    // 13. La ilaha illallah
+    // 15. La ilaha illallah
     Dhikr(
-      id: 'morning_13',
+      id: 'morning_15',
       title: 'Tahlil',
       arabicText: '''لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ''',
       transliteration: 'La ilaha illallahu wahdahu la shareeka lah, lahul-mulku wa lahul-hamd, wa huwa \'ala kulli shay\'in qadeer',
@@ -174,9 +200,9 @@ class AdhkarData {
       reference: 'Sahih Muslim (2691); Sunan Abu Dawud (5077); Narrated by Abu Ayyub Al-Ansari',
     ),
 
-    // 14. Astaghfirullah
+    // 16. Astaghfirullah
     Dhikr(
-      id: 'morning_14',
+      id: 'morning_16',
       title: 'Seeking Forgiveness',
       arabicText: '''أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ''',
       transliteration: 'Astaghfirullaha wa atubu ilayh',
@@ -187,9 +213,9 @@ class AdhkarData {
       reference: 'Sahih Muslim (2702); Sahih Al-Bukhari (6307); Narrated by Al-Agharr Al-Muzani & Abu Hurairah',
     ),
 
-    // 15. Sayyid al-Istighfar
+    // 17. Sayyid al-Istighfar
     Dhikr(
-      id: 'morning_15',
+      id: 'morning_17',
       title: 'Sayyid al-Istighfar',
       arabicText: '''اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ''',
       transliteration: 'Allahumma anta Rabbi la ilaha illa ant, khalaqtani wa ana \'abduk, wa ana \'ala \'ahdika wa wa\'dika mastata\'t, a\'udhu bika min sharri ma sana\'t, abu\'u laka bi ni\'matika \'alayya, wa abu\'u bi dhanbi, faghfir li fa innahu la yaghfiru-dhunuba illa ant',
@@ -200,9 +226,9 @@ class AdhkarData {
       reference: 'Sahih Al-Bukhari (6306); Narrated by Shaddad bin Aus',
     ),
 
-    // 16. Protection from Evil Eye - Prophetic Dua for Children & Self
+    // 18. Protection from Evil Eye - Prophetic Dua for Children & Self
     Dhikr(
-      id: 'morning_16',
+      id: 'morning_18',
       title: 'Protection from Evil Eye',
       arabicText: '''أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ وَمِنْ كُلِّ عَيْنٍ لاَمَّةٍ''',
       transliteration: 'A\'ūdhu bi-kalimāti-llāhi-t-tāmmati min kulli shayṭānin wa hāmmah, wa min kulli \'aynin lāmmah',
@@ -213,9 +239,9 @@ class AdhkarData {
       reference: 'Sahih Al-Bukhari (3371); Narrated by Ibn Abbas',
     ),
 
-    // 17. Dua for Healing from Evil Eye
+    // 19. Dua for Healing from Evil Eye
     Dhikr(
-      id: 'morning_17',
+      id: 'morning_19',
       title: 'Healing from Evil Eye',
       arabicText: '''بِسْمِ اللَّهِ، اللَّهُمَّ أَذْهِبْ عَنْهُ حَرَّهَا وَبَرْدَهَا وَوَصَبَهَا''',
       transliteration: 'Bismillah, Allahumma azhib \'anhu harraha wa bardaha wa wasabaha',
@@ -255,9 +281,35 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
     ),
 
-    // 3. Surah Al-Falaq
+    // 3. Dua of Yunus
     Dhikr(
       id: 'evening_3',
+      title: 'Du\'a of Yunus',
+      arabicText: '''لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ''',
+      transliteration: 'La ilaha illa anta subhanaka inni kuntu minaz-zalimin',
+      englishTranslation: 'There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.',
+      repetitions: 1,
+      category: 'evening',
+      fazail: 'No Muslim man supplicates with it for anything, ever, except Allah responds to him.',
+      reference: 'Jami\' at-Tirmidhi (3505)',
+    ),
+
+    // 4. Bismillah protection dua
+    Dhikr(
+      id: 'evening_4',
+      title: 'Protection from Harm',
+      arabicText: '''بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ''',
+      transliteration: 'Bismillahil-ladhi la yadurru ma\'as-mihi shai\'un fil-ardi wa la fis-sama\'i, wa Huwas-Sami\'ul-\'Alim',
+      englishTranslation: 'In the Name of Allah with Whose Name there is protection against every kind of harm in the earth or in the heaven, and He is the All-Hearing and All-Knowing.',
+      repetitions: 3,
+      category: 'evening',
+      fazail: 'He who recites this three times every morning and evening, nothing will harm him.',
+      reference: 'Riyad as-Salihin (1457)',
+    ),
+
+    // 5. Surah Al-Falaq
+    Dhikr(
+      id: 'evening_5',
       title: 'Surah Al-Falaq',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ''',
@@ -269,9 +321,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
     ),
 
-    // 4. Surah An-Nas
+    // 6. Surah An-Nas
     Dhikr(
-      id: 'evening_4',
+      id: 'evening_6',
       title: 'Surah An-Nas',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلَٰهِ النَّاسِ ۝ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ''',
@@ -283,9 +335,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
     ),
 
-    // 5. Evening dua - Amsayna
+    // 7. Evening dua - Amsayna
     Dhikr(
-      id: 'evening_5',
+      id: 'evening_7',
       title: 'Evening Supplication',
       arabicText: '''أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ''',
       transliteration: 'Amsayna wa amsal-mulku lillah, walhamdu lillah, la ilaha illallahu wahdahu la shareeka lah, lahul-mulku wa lahul-hamd, wa huwa \'ala kulli shay\'in qadeer...',
@@ -296,9 +348,9 @@ class AdhkarData {
       reference: 'Sahih Muslim (2723); Narrated by Abdullah ibn Mas\'ud',
     ),
 
-    // 6. Allahumma bika amsayna
+    // 8. Allahumma bika amsayna
     Dhikr(
-      id: 'evening_6',
+      id: 'evening_8',
       title: 'Affirming Life & Death',
       arabicText: '''اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيرُ''',
       transliteration: 'Allahumma bika amsayna, wa bika asbahna, wa bika nahya, wa bika namutu, wa ilaykal-maseer',
@@ -309,9 +361,9 @@ class AdhkarData {
       reference: 'Jami\' at-Tirmidhi (3391); Sunan Abu Dawud (5068); Narrated by Abu Hurairah; Sahih by Al-Albani',
     ),
 
-    // 7. Allahumma inni amsaytu ush'hiduka
+    // 9. Allahumma inni amsaytu ush'hiduka
     Dhikr(
-      id: 'evening_7',
+      id: 'evening_9',
       title: 'Declaration of Faith',
       arabicText: '''اللَّهُمَّ إِنِّي أَمْسَيْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلَائِكَتَكَ، وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ''',
       transliteration: 'Allahumma inni amsaytu ush\'hiduka, wa ush\'hidu hamalata \'arshika, wa mala\'ikatika, wa jamee\'a khalqika, annaka antallahu la ilaha illa anta wahdaka la shareeka lak, wa anna Muhammadan \'abduka wa rasuluk',
@@ -322,9 +374,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5069); Al-Bukhari, Al-Adab Al-Mufrad (1201); Narrated by Anas bin Malik; Hasan',
     ),
 
-    // 8. Raditu billahi rabba
+    // 10. Raditu billahi rabba
     Dhikr(
-      id: 'evening_8',
+      id: 'evening_10',
       title: 'Contentment with Allah',
       arabicText: '''رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا''',
       transliteration: 'Raditu billahi rabba, wa bil-islami deena, wa bi-Muhammadin sallallahu \'alayhi wa sallama nabiyya',
@@ -335,9 +387,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5072); Sunan Ibn Majah (3870); Narrated by Thawban; Sahih by Al-Albani',
     ),
 
-    // 9. Ya Hayyu Ya Qayyum
+    // 11. Ya Hayyu Ya Qayyum
     Dhikr(
-      id: 'evening_9',
+      id: 'evening_11',
       title: 'Ya Hayyu Ya Qayyum',
       arabicText: '''يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ''',
       transliteration: 'Ya Hayyu Ya Qayyum, bi-rahmatika astaghith, aslih li sha\'ni kullahu, wa la takilni ila nafsi tarfata \'ayn',
@@ -348,9 +400,9 @@ class AdhkarData {
       reference: 'Al-Hakim, Al-Mustadrak (1/545); An-Nasai, As-Sunan Al-Kubra (10330); Narrated by Anas bin Malik; Hasan by Al-Albani in Sahih al-Jami\' (4777)',
     ),
 
-    // 10. Allahumma 'afini fi badani
+    // 12. Allahumma 'afini fi badani
     Dhikr(
-      id: 'evening_10',
+      id: 'evening_12',
       title: 'Dua for Health & Protection',
       arabicText: '''اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَٰهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَٰهَ إِلَّا أَنْتَ''',
       transliteration: 'Allahumma \'afini fi badani, Allahumma \'afini fi sam\'i, Allahumma \'afini fi basari, la ilaha illa ant. Allahumma inni a\'udhu bika minal-kufri, wal-faqr, wa a\'udhu bika min \'adhabil-qabr, la ilaha illa ant',
@@ -361,9 +413,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5090); Al-Adab Al-Mufrad (701); An-Nasa\'i Al-Kubra (10401); Narrated by Abdur-Rahman bin Abi Bakrah; Hasan by Al-Albani',
     ),
 
-    // 11. Hasbiyallahu la ilaha illa hu
+    // 13. Hasbiyallahu la ilaha illa hu
     Dhikr(
-      id: 'evening_11',
+      id: 'evening_13',
       title: 'Reliance on Allah',
       arabicText: '''حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ، عَلَيْهِ تَوَكَّلْتُ، وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ''',
       transliteration: 'Hasbiyallahu la ilaha illa huwa, \'alayhi tawakkaltu, wa huwa rabbul-\'arshil-\'azeem',
@@ -374,9 +426,9 @@ class AdhkarData {
       reference: 'Sunan Abu Dawud (5081); Narrated by Abu ad-Darda; Mawquf with ruling of Marfu\'',
     ),
 
-    // 12. SubhanAllah wa bihamdihi
+    // 14. SubhanAllah wa bihamdihi
     Dhikr(
-      id: 'evening_12',
+      id: 'evening_14',
       title: 'SubhanAllah wa bihamdihi',
       arabicText: '''سُبْحَانَ اللَّهِ وَبِحَمْدِهِ''',
       transliteration: 'SubhanAllahi wa bihamdihi',
@@ -387,9 +439,9 @@ class AdhkarData {
       reference: 'Sahih Muslim (2692); Narrated by Abu Hurairah',
     ),
 
-    // 13. La ilaha illallah
+    // 15. La ilaha illallah
     Dhikr(
-      id: 'evening_13',
+      id: 'evening_15',
       title: 'Tahlil',
       arabicText: '''لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ''',
       transliteration: 'La ilaha illallahu wahdahu la shareeka lah, lahul-mulku wa lahul-hamd, wa huwa \'ala kulli shay\'in qadeer',
@@ -400,9 +452,9 @@ class AdhkarData {
       reference: 'Sahih Muslim (2691); Sunan Abu Dawud (5077); Narrated by Abu Ayyub Al-Ansari',
     ),
 
-    // 14. Astaghfirullah
+    // 16. Astaghfirullah
     Dhikr(
-      id: 'evening_14',
+      id: 'evening_16',
       title: 'Seeking Forgiveness',
       arabicText: '''أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ''',
       transliteration: 'Astaghfirullaha wa atubu ilayh',
@@ -413,9 +465,9 @@ class AdhkarData {
       reference: 'Sahih Muslim (2702); Sahih Al-Bukhari (6307); Narrated by Al-Agharr Al-Muzani & Abu Hurairah',
     ),
 
-    // 15. Sayyid al-Istighfar
+    // 17. Sayyid al-Istighfar
     Dhikr(
-      id: 'evening_15',
+      id: 'evening_17',
       title: 'Sayyid al-Istighfar',
       arabicText: '''اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ''',
       transliteration: 'Allahumma anta Rabbi la ilaha illa ant, khalaqtani wa ana \'abduk, wa ana \'ala \'ahdika wa wa\'dika mastata\'t, a\'udhu bika min sharri ma sana\'t, abu\'u laka bi ni\'matika \'alayya, wa abu\'u bi dhanbi, faghfir li fa innahu la yaghfiru-dhunuba illa ant',
@@ -426,9 +478,9 @@ class AdhkarData {
       reference: 'Sahih Al-Bukhari (6306); Narrated by Shaddad bin Aus',
     ),
 
-    // 16. Protection from Evil Eye - Prophetic Dua for Children & Self
+    // 18. Protection from Evil Eye - Prophetic Dua for Children & Self
     Dhikr(
-      id: 'evening_16',
+      id: 'evening_18',
       title: 'Protection from Evil Eye',
       arabicText: '''أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ وَمِنْ كُلِّ عَيْنٍ لاَمَّةٍ''',
       transliteration: 'A\'ūdhu bi-kalimāti-llāhi-t-tāmmati min kulli shayṭānin wa hāmmah, wa min kulli \'aynin lāmmah',
@@ -439,9 +491,9 @@ class AdhkarData {
       reference: 'Sahih Al-Bukhari (3371); Narrated by Ibn Abbas',
     ),
 
-    // 17. Dua for Healing from Evil Eye
+    // 19. Dua for Healing from Evil Eye
     Dhikr(
-      id: 'evening_17',
+      id: 'evening_19',
       title: 'Healing from Evil Eye',
       arabicText: '''بِسْمِ اللَّهِ، اللَّهُمَّ أَذْهِبْ عَنْهُ حَرَّهَا وَبَرْدَهَا وَوَصَبَهَا''',
       transliteration: 'Bismillah, Allahumma azhib \'anhu harraha wa bardaha wa wasabaha',
