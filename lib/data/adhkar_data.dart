@@ -5,6 +5,7 @@ class AdhkarData {
     // 1. Ayat al-Kursi
     Dhikr(
       id: 'morning_1',
+      title: 'Ayat al-Kursi',
       arabicText: '''اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ''',
       transliteration: 'Allahu la ilaha illa huwal hayyul qayyum...',
       englishTranslation: 'Allah - there is no deity except Him, the Ever-Living, the Sustainer of existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.',
@@ -17,6 +18,7 @@ class AdhkarData {
     // 2. Surah Al-Ikhlas
     Dhikr(
       id: 'morning_2',
+      title: 'Surah Al-Ikhlas',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ''',
       transliteration: 'Qul huwa Allahu ahad, Allahus-samad, lam yalid wa lam yulad, wa lam yakun lahu kufuwan ahad',
@@ -30,6 +32,7 @@ class AdhkarData {
     // 3. Surah Al-Falaq
     Dhikr(
       id: 'morning_3',
+      title: 'Surah Al-Falaq',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ''',
       transliteration: 'Qul a\'udhu bi rabbil-falaq, min sharri ma khalaq, wa min sharri ghasiqin idha waqab, wa min sharrin-naffathati fil-\'uqad, wa min sharri hasidin idha hasad',
@@ -43,6 +46,7 @@ class AdhkarData {
     // 4. Surah An-Nas
     Dhikr(
       id: 'morning_4',
+      title: 'Surah An-Nas',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلَٰهِ النَّاسِ ۝ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ''',
       transliteration: 'Qul a\'udhu bi rabbin-nas, malikin-nas, ilahin-nas, min sharril-waswaasil-khannas, alladhi yuwaswisu fi sudurin-nas, minal-jinnati wan-nas',
@@ -56,6 +60,7 @@ class AdhkarData {
     // 5. Morning dua - Asbahna
     Dhikr(
       id: 'morning_5',
+      title: 'Morning Supplication',
       arabicText: '''أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ''',
       transliteration: 'Asbahna wa asbahal-mulku lillah, walhamdu lillah, la ilaha illallahu wahdahu la shareeka lah, lahul-mulku wa lahul-hamd, wa huwa \'ala kulli shay\'in qadeer...',
       englishTranslation: 'We have reached the morning and at this very time the whole kingdom belongs to Allah. All praise is for Allah. None has the right to be worshipped except Allah, alone, without partner. To Him belongs the kingdom and all praise, and He is over all things omnipotent. My Lord, I ask You for the good of this day and the good of what follows it, and I seek refuge in You from the evil of this day and the evil of what follows it. My Lord, I seek refuge in You from laziness and senility. My Lord, I seek refuge in You from the punishment of Hellfire and the punishment of the grave.',
@@ -68,6 +73,7 @@ class AdhkarData {
     // 6. Allahumma bika asbahna
     Dhikr(
       id: 'morning_6',
+      title: 'Affirming Life & Death',
       arabicText: '''اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ''',
       transliteration: 'Allahumma bika asbahna, wa bika amsayna, wa bika nahya, wa bika namutu, wa ilaykan-nushur',
       englishTranslation: 'O Allah, by Your leave we have reached the morning and by Your leave we have reached the evening; by Your leave we live and die, and unto You is our resurrection.',
@@ -80,6 +86,7 @@ class AdhkarData {
     // 7. Allahumma inni asbahtu ush'hiduka
     Dhikr(
       id: 'morning_7',
+      title: 'Declaration of Faith',
       arabicText: '''اللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلَائِكَتَكَ، وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ''',
       transliteration: 'Allahumma inni asbahtu ush\'hiduka, wa ush\'hidu hamalata \'arshika, wa mala\'ikatika, wa jamee\'a khalqika, annaka antallahu la ilaha illa anta wahdaka la shareeka lak, wa anna Muhammadan \'abduka wa rasuluk',
       englishTranslation: 'O Allah, I have reached the morning and call on You, the bearers of Your throne, Your angels, and all of Your creation to witness that You are Allah, none has the right to be worshipped except You, alone, without partner, and that Muhammad is Your servant and Messenger.',
@@ -92,6 +99,7 @@ class AdhkarData {
     // 8. Raditu billahi rabba
     Dhikr(
       id: 'morning_8',
+      title: 'Contentment with Allah',
       arabicText: '''رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا''',
       transliteration: 'Raditu billahi rabba, wa bil-islami deena, wa bi-Muhammadin sallallahu \'alayhi wa sallama nabiyya',
       englishTranslation: 'I am pleased with Allah as my Lord, with Islam as my religion and with Muhammad (peace be upon him) as my Prophet.',
@@ -104,6 +112,7 @@ class AdhkarData {
     // 9. Ya Hayyu Ya Qayyum
     Dhikr(
       id: 'morning_9',
+      title: 'Ya Hayyu Ya Qayyum',
       arabicText: '''يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ''',
       transliteration: 'Ya Hayyu Ya Qayyum, bi-rahmatika astaghith, aslih li sha\'ni kullahu, wa la takilni ila nafsi tarfata \'ayn',
       englishTranslation: 'O Ever-Living, O Self-Sustaining and All-Sustaining, by Your mercy I seek assistance, rectify for me all of my affairs and do not leave me to myself, even for the blink of an eye.',
@@ -116,6 +125,7 @@ class AdhkarData {
     // 10. Allahumma 'afini fi badani
     Dhikr(
       id: 'morning_10',
+      title: 'Dua for Health & Protection',
       arabicText: '''اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَٰهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَٰهَ إِلَّا أَنْتَ''',
       transliteration: 'Allahumma \'afini fi badani, Allahumma \'afini fi sam\'i, Allahumma \'afini fi basari, la ilaha illa ant. Allahumma inni a\'udhu bika minal-kufri, wal-faqr, wa a\'udhu bika min \'adhabil-qabr, la ilaha illa ant',
       englishTranslation: 'O Allah, grant my body health. O Allah, grant my hearing health. O Allah, grant my sight health. None has the right to be worshipped except You. O Allah, I seek refuge in You from disbelief and poverty, and I seek refuge in You from the punishment of the grave. None has the right to be worshipped except You.',
@@ -128,6 +138,7 @@ class AdhkarData {
     // 11. Hasbiyallahu la ilaha illa hu
     Dhikr(
       id: 'morning_11',
+      title: 'Reliance on Allah',
       arabicText: '''حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ، عَلَيْهِ تَوَكَّلْتُ، وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ''',
       transliteration: 'Hasbiyallahu la ilaha illa huwa, \'alayhi tawakkaltu, wa huwa rabbul-\'arshil-\'azeem',
       englishTranslation: 'Allah is Sufficient for me. None has the right to be worshipped except Him. I place my trust in Him and He is the Lord of the Magnificent Throne.',
@@ -140,6 +151,7 @@ class AdhkarData {
     // 12. SubhanAllah wa bihamdihi
     Dhikr(
       id: 'morning_12',
+      title: 'SubhanAllah wa bihamdihi',
       arabicText: '''سُبْحَانَ اللَّهِ وَبِحَمْدِهِ''',
       transliteration: 'SubhanAllahi wa bihamdihi',
       englishTranslation: 'Glory be to Allah and praise be to Him.',
@@ -152,6 +164,7 @@ class AdhkarData {
     // 13. La ilaha illallah
     Dhikr(
       id: 'morning_13',
+      title: 'Tahlil',
       arabicText: '''لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ''',
       transliteration: 'La ilaha illallahu wahdahu la shareeka lah, lahul-mulku wa lahul-hamd, wa huwa \'ala kulli shay\'in qadeer',
       englishTranslation: 'None has the right to be worshipped except Allah, alone, without partner. To Him belongs the kingdom and all praise, and He is over all things omnipotent.',
@@ -164,6 +177,7 @@ class AdhkarData {
     // 14. Astaghfirullah
     Dhikr(
       id: 'morning_14',
+      title: 'Seeking Forgiveness',
       arabicText: '''أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ''',
       transliteration: 'Astaghfirullaha wa atubu ilayh',
       englishTranslation: 'I seek the forgiveness of Allah and repent to Him.',
@@ -176,6 +190,7 @@ class AdhkarData {
     // 15. Sayyid al-Istighfar
     Dhikr(
       id: 'morning_15',
+      title: 'Sayyid al-Istighfar',
       arabicText: '''اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ''',
       transliteration: 'Allahumma anta Rabbi la ilaha illa ant, khalaqtani wa ana \'abduk, wa ana \'ala \'ahdika wa wa\'dika mastata\'t, a\'udhu bika min sharri ma sana\'t, abu\'u laka bi ni\'matika \'alayya, wa abu\'u bi dhanbi, faghfir li fa innahu la yaghfiru-dhunuba illa ant',
       englishTranslation: 'O Allah, You are my Lord. None has the right to be worshipped except You. You created me and I am Your servant, and I abide by Your covenant and promise as best I can. I seek refuge in You from the evil of what I have done. I acknowledge Your favor upon me and I acknowledge my sin, so forgive me, for verily none can forgive sins except You.',
@@ -188,6 +203,7 @@ class AdhkarData {
     // 16. Protection from Evil Eye - Prophetic Dua for Children & Self
     Dhikr(
       id: 'morning_16',
+      title: 'Protection from Evil Eye',
       arabicText: '''أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ وَمِنْ كُلِّ عَيْنٍ لاَمَّةٍ''',
       transliteration: 'A\'ūdhu bi-kalimāti-llāhi-t-tāmmati min kulli shayṭānin wa hāmmah, wa min kulli \'aynin lāmmah',
       englishTranslation: 'I seek refuge in the Perfect Words of Allah from every devil and every poisonous pest, and from every evil, harmful eye.',
@@ -200,6 +216,7 @@ class AdhkarData {
     // 17. Dua for Healing from Evil Eye
     Dhikr(
       id: 'morning_17',
+      title: 'Healing from Evil Eye',
       arabicText: '''بِسْمِ اللَّهِ، اللَّهُمَّ أَذْهِبْ عَنْهُ حَرَّهَا وَبَرْدَهَا وَوَصَبَهَا''',
       transliteration: 'Bismillah, Allahumma azhib \'anhu harraha wa bardaha wa wasabaha',
       englishTranslation: 'In the name of Allah. O Allah, remove from him/me its heat, its cold, and its pain (or illness).',
@@ -214,6 +231,7 @@ class AdhkarData {
     // 1. Ayat al-Kursi
     Dhikr(
       id: 'evening_1',
+      title: 'Ayat al-Kursi',
       arabicText: '''اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ''',
       transliteration: 'Allahu la ilaha illa huwal hayyul qayyum...',
       englishTranslation: 'Allah - there is no deity except Him, the Ever-Living, the Sustainer of existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.',
@@ -226,6 +244,7 @@ class AdhkarData {
     // 2. Surah Al-Ikhlas
     Dhikr(
       id: 'evening_2',
+      title: 'Surah Al-Ikhlas',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ''',
       transliteration: 'Qul huwa Allahu ahad, Allahus-samad, lam yalid wa lam yulad, wa lam yakun lahu kufuwan ahad',
@@ -239,6 +258,7 @@ class AdhkarData {
     // 3. Surah Al-Falaq
     Dhikr(
       id: 'evening_3',
+      title: 'Surah Al-Falaq',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ''',
       transliteration: 'Qul a\'udhu bi rabbil-falaq, min sharri ma khalaq, wa min sharri ghasiqin idha waqab, wa min sharrin-naffathati fil-\'uqad, wa min sharri hasidin idha hasad',
@@ -252,6 +272,7 @@ class AdhkarData {
     // 4. Surah An-Nas
     Dhikr(
       id: 'evening_4',
+      title: 'Surah An-Nas',
       arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلَٰهِ النَّاسِ ۝ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ''',
       transliteration: 'Qul a\'udhu bi rabbin-nas, malikin-nas, ilahin-nas, min sharril-waswaasil-khannas, alladhi yuwaswisu fi sudurin-nas, minal-jinnati wan-nas',
@@ -265,6 +286,7 @@ class AdhkarData {
     // 5. Evening dua - Amsayna
     Dhikr(
       id: 'evening_5',
+      title: 'Evening Supplication',
       arabicText: '''أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ''',
       transliteration: 'Amsayna wa amsal-mulku lillah, walhamdu lillah, la ilaha illallahu wahdahu la shareeka lah, lahul-mulku wa lahul-hamd, wa huwa \'ala kulli shay\'in qadeer...',
       englishTranslation: 'We have reached the evening and at this very time the whole kingdom belongs to Allah. All praise is for Allah. None has the right to be worshipped except Allah, alone, without partner. To Him belongs the kingdom and all praise, and He is over all things omnipotent. My Lord, I ask You for the good of this night and the good of what follows it, and I seek refuge in You from the evil of this night and the evil of what follows it. My Lord, I seek refuge in You from laziness and senility. My Lord, I seek refuge in You from the punishment of Hellfire and the punishment of the grave.',
@@ -277,6 +299,7 @@ class AdhkarData {
     // 6. Allahumma bika amsayna
     Dhikr(
       id: 'evening_6',
+      title: 'Affirming Life & Death',
       arabicText: '''اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيرُ''',
       transliteration: 'Allahumma bika amsayna, wa bika asbahna, wa bika nahya, wa bika namutu, wa ilaykal-maseer',
       englishTranslation: 'O Allah, by Your leave we have reached the evening and by Your leave we have reached the morning; by Your leave we live and die, and unto You is our return.',
@@ -289,6 +312,7 @@ class AdhkarData {
     // 7. Allahumma inni amsaytu ush'hiduka
     Dhikr(
       id: 'evening_7',
+      title: 'Declaration of Faith',
       arabicText: '''اللَّهُمَّ إِنِّي أَمْسَيْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلَائِكَتَكَ، وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ''',
       transliteration: 'Allahumma inni amsaytu ush\'hiduka, wa ush\'hidu hamalata \'arshika, wa mala\'ikatika, wa jamee\'a khalqika, annaka antallahu la ilaha illa anta wahdaka la shareeka lak, wa anna Muhammadan \'abduka wa rasuluk',
       englishTranslation: 'O Allah, I have reached the evening and call on You, the bearers of Your throne, Your angels, and all of Your creation to witness that You are Allah, none has the right to be worshipped except You, alone, without partner, and that Muhammad is Your servant and Messenger.',
@@ -301,6 +325,7 @@ class AdhkarData {
     // 8. Raditu billahi rabba
     Dhikr(
       id: 'evening_8',
+      title: 'Contentment with Allah',
       arabicText: '''رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا''',
       transliteration: 'Raditu billahi rabba, wa bil-islami deena, wa bi-Muhammadin sallallahu \'alayhi wa sallama nabiyya',
       englishTranslation: 'I am pleased with Allah as my Lord, with Islam as my religion and with Muhammad (peace be upon him) as my Prophet.',
@@ -313,6 +338,7 @@ class AdhkarData {
     // 9. Ya Hayyu Ya Qayyum
     Dhikr(
       id: 'evening_9',
+      title: 'Ya Hayyu Ya Qayyum',
       arabicText: '''يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ''',
       transliteration: 'Ya Hayyu Ya Qayyum, bi-rahmatika astaghith, aslih li sha\'ni kullahu, wa la takilni ila nafsi tarfata \'ayn',
       englishTranslation: 'O Ever-Living, O Self-Sustaining and All-Sustaining, by Your mercy I seek assistance, rectify for me all of my affairs and do not leave me to myself, even for the blink of an eye.',
@@ -325,6 +351,7 @@ class AdhkarData {
     // 10. Allahumma 'afini fi badani
     Dhikr(
       id: 'evening_10',
+      title: 'Dua for Health & Protection',
       arabicText: '''اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَٰهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَٰهَ إِلَّا أَنْتَ''',
       transliteration: 'Allahumma \'afini fi badani, Allahumma \'afini fi sam\'i, Allahumma \'afini fi basari, la ilaha illa ant. Allahumma inni a\'udhu bika minal-kufri, wal-faqr, wa a\'udhu bika min \'adhabil-qabr, la ilaha illa ant',
       englishTranslation: 'O Allah, grant my body health. O Allah, grant my hearing health. O Allah, grant my sight health. None has the right to be worshipped except You. O Allah, I seek refuge in You from disbelief and poverty, and I seek refuge in You from the punishment of the grave. None has the right to be worshipped except You.',
@@ -337,6 +364,7 @@ class AdhkarData {
     // 11. Hasbiyallahu la ilaha illa hu
     Dhikr(
       id: 'evening_11',
+      title: 'Reliance on Allah',
       arabicText: '''حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ، عَلَيْهِ تَوَكَّلْتُ، وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ''',
       transliteration: 'Hasbiyallahu la ilaha illa huwa, \'alayhi tawakkaltu, wa huwa rabbul-\'arshil-\'azeem',
       englishTranslation: 'Allah is Sufficient for me. None has the right to be worshipped except Him. I place my trust in Him and He is the Lord of the Magnificent Throne.',
@@ -349,6 +377,7 @@ class AdhkarData {
     // 12. SubhanAllah wa bihamdihi
     Dhikr(
       id: 'evening_12',
+      title: 'SubhanAllah wa bihamdihi',
       arabicText: '''سُبْحَانَ اللَّهِ وَبِحَمْدِهِ''',
       transliteration: 'SubhanAllahi wa bihamdihi',
       englishTranslation: 'Glory be to Allah and praise be to Him.',
@@ -361,6 +390,7 @@ class AdhkarData {
     // 13. La ilaha illallah
     Dhikr(
       id: 'evening_13',
+      title: 'Tahlil',
       arabicText: '''لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ''',
       transliteration: 'La ilaha illallahu wahdahu la shareeka lah, lahul-mulku wa lahul-hamd, wa huwa \'ala kulli shay\'in qadeer',
       englishTranslation: 'None has the right to be worshipped except Allah, alone, without partner. To Him belongs the kingdom and all praise, and He is over all things omnipotent.',
@@ -373,6 +403,7 @@ class AdhkarData {
     // 14. Astaghfirullah
     Dhikr(
       id: 'evening_14',
+      title: 'Seeking Forgiveness',
       arabicText: '''أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ''',
       transliteration: 'Astaghfirullaha wa atubu ilayh',
       englishTranslation: 'I seek the forgiveness of Allah and repent to Him.',
@@ -385,6 +416,7 @@ class AdhkarData {
     // 15. Sayyid al-Istighfar
     Dhikr(
       id: 'evening_15',
+      title: 'Sayyid al-Istighfar',
       arabicText: '''اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ''',
       transliteration: 'Allahumma anta Rabbi la ilaha illa ant, khalaqtani wa ana \'abduk, wa ana \'ala \'ahdika wa wa\'dika mastata\'t, a\'udhu bika min sharri ma sana\'t, abu\'u laka bi ni\'matika \'alayya, wa abu\'u bi dhanbi, faghfir li fa innahu la yaghfiru-dhunuba illa ant',
       englishTranslation: 'O Allah, You are my Lord. None has the right to be worshipped except You. You created me and I am Your servant, and I abide by Your covenant and promise as best I can. I seek refuge in You from the evil of what I have done. I acknowledge Your favor upon me and I acknowledge my sin, so forgive me, for verily none can forgive sins except You.',
@@ -397,6 +429,7 @@ class AdhkarData {
     // 16. Protection from Evil Eye - Prophetic Dua for Children & Self
     Dhikr(
       id: 'evening_16',
+      title: 'Protection from Evil Eye',
       arabicText: '''أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ وَمِنْ كُلِّ عَيْنٍ لاَمَّةٍ''',
       transliteration: 'A\'ūdhu bi-kalimāti-llāhi-t-tāmmati min kulli shayṭānin wa hāmmah, wa min kulli \'aynin lāmmah',
       englishTranslation: 'I seek refuge in the Perfect Words of Allah from every devil and every poisonous pest, and from every evil, harmful eye.',
@@ -409,6 +442,7 @@ class AdhkarData {
     // 17. Dua for Healing from Evil Eye
     Dhikr(
       id: 'evening_17',
+      title: 'Healing from Evil Eye',
       arabicText: '''بِسْمِ اللَّهِ، اللَّهُمَّ أَذْهِبْ عَنْهُ حَرَّهَا وَبَرْدَهَا وَوَصَبَهَا''',
       transliteration: 'Bismillah, Allahumma azhib \'anhu harraha wa bardaha wa wasabaha',
       englishTranslation: 'In the name of Allah. O Allah, remove from him/me its heat, its cold, and its pain (or illness).',

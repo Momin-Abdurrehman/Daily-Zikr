@@ -1,5 +1,6 @@
 class Dhikr {
   final String id;
+  final String title;
   final String arabicText;
   final String transliteration;
   final String englishTranslation;
@@ -10,6 +11,7 @@ class Dhikr {
 
   const Dhikr({
     required this.id,
+    required this.title,
     required this.arabicText,
     required this.transliteration,
     required this.englishTranslation,

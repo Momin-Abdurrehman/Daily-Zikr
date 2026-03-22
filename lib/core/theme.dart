@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   // Islamic Color Palette
@@ -39,7 +38,7 @@ class AppTheme {
     Color? color,
     FontWeight fontWeight = FontWeight.normal,
   }) {
-    return GoogleFonts.roboto(
+    return TextStyle(
       fontSize: fontSize,
       color: color,
       fontWeight: fontWeight,
@@ -65,7 +64,7 @@ class AppTheme {
       foregroundColor: Colors.white,
       elevation: 0,
       centerTitle: true,
-      titleTextStyle: GoogleFonts.roboto(
+      titleTextStyle: TextStyle(
         fontSize: 20,
         fontWeight: FontWeight.w600,
         color: Colors.white,
@@ -109,7 +108,7 @@ class AppTheme {
       foregroundColor: Colors.white,
       elevation: 0,
       centerTitle: true,
-      titleTextStyle: GoogleFonts.roboto(
+      titleTextStyle: TextStyle(
         fontSize: 20,
         fontWeight: FontWeight.w600,
         color: Colors.white,

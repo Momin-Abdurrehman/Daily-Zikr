@@ -73,8 +73,20 @@ class _DhikrCardState extends State<DhikrCard> {
                 ),
               ],
             ),
-            const SizedBox(height: 20),
-            
+            // Title
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 12),
+              child: Text(
+                widget.dhikr.title,
+                style: AppTheme.englishStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: isDark ? Colors.white : Colors.black87,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+
             // Arabic Text
             Directionality(
               textDirection: TextDirection.rtl,

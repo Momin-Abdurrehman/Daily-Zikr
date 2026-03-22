@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'core/theme.dart';
 import 'providers/adhkar_provider.dart';
@@ -11,9 +10,6 @@ import 'services/notification_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  // Allow Google Fonts to fetch from local cache when offline
-  GoogleFonts.config.allowRuntimeFetching = true;
 
   // Initialize notification service on native platforms
   if (!kIsWeb) {
