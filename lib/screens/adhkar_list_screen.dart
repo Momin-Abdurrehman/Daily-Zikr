@@ -31,51 +31,41 @@ class AdhkarListScreen extends StatelessWidget {
 
           return Column(
             children: [
-              // Header + optional restore icon
-              Stack(
-                children: [
-                  ProgressHeader(
-                    title: isMorning ? 'Morning Adhkar' : 'Evening Adhkar',
-                    isCompleted: isCompleted,
-                  ),
-                  if (hiddenList.isNotEmpty)
-                    Positioned(
-                      top: 8,
-                      right: 8,
-                      child: SafeArea(
-                        child: Tooltip(
-                          message: '${hiddenList.length} hidden supplication${hiddenList.length > 1 ? 's' : ''}',
-                          child: InkWell(
-                            onTap: () => _showRestoreSheet(context, adhkarProvider, hiddenList),
-                            borderRadius: BorderRadius.circular(20),
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                              decoration: BoxDecoration(
-                                color: Colors.white.withValues(alpha: 0.15),
-                                borderRadius: BorderRadius.circular(20),
-                                border: Border.all(color: Colors.white.withValues(alpha: 0.3)),
-                              ),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  const Icon(Icons.visibility_off_outlined, size: 16, color: Colors.white),
-                                  const SizedBox(width: 4),
-                                  Text(
-                                    '${hiddenList.length}',
-                                    style: AppTheme.englishStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                    ),
+              ProgressHeader(
+                title: isMorning ? 'Morning Adhkar' : 'Evening Adhkar',
+                isCompleted: isCompleted,
+                trailing: hiddenList.isNotEmpty
+                    ? Tooltip(
+                        message: '${hiddenList.length} hidden supplication${hiddenList.length > 1 ? 's' : ''}',
+                        child: InkWell(
+                          onTap: () => _showRestoreSheet(context, adhkarProvider, hiddenList),
+                          borderRadius: BorderRadius.circular(20),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.15),
+                              borderRadius: BorderRadius.circular(20),
+                              border: Border.all(color: Colors.white.withValues(alpha: 0.3)),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(Icons.visibility_off_outlined, size: 16, color: Colors.white),
+                                const SizedBox(width: 4),
+                                Text(
+                                  '${hiddenList.length}',
+                                  style: AppTheme.englishStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                      ),
-                    ),
-                ],
+                      )
+                    : null,
               ),
 
               // Adhkar List (reorderable)
@@ -92,21 +82,18 @@ class AdhkarListScreen extends StatelessWidget {
                       Material(color: Colors.transparent, child: child),
                   itemBuilder: (context, index) {
                     final dhikr = adhkarList[index];
-                    return ReorderableDragStartListener(
+                    return DhikrCard(
                       key: ValueKey(dhikr.id),
+                      dhikr: dhikr,
                       index: index,
-                      child: DhikrCard(
-                        dhikr: dhikr,
-                        index: index,
-                        // Custom items get permanent delete
-                        onDelete: dhikr.isCustom
-                            ? () => _confirmDelete(context, adhkarProvider, dhikr.id)
-                            : null,
-                        // Built-in items get a hide (eye-off) button
-                        onHide: !dhikr.isCustom
-                            ? () => _confirmHide(context, adhkarProvider, dhikr.id, dhikr.title)
-                            : null,
-                      ),
+                      // Custom items get permanent delete
+                      onDelete: dhikr.isCustom
+                          ? () => _confirmDelete(context, adhkarProvider, dhikr.id)
+                          : null,
+                      // Built-in items get a hide (eye-off) button
+                      onHide: !dhikr.isCustom
+                          ? () => _confirmHide(context, adhkarProvider, dhikr.id, dhikr.title)
+                          : null,
                     );
                   },
                 ),

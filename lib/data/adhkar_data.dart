@@ -15,23 +15,9 @@ class AdhkarData {
       reference: 'An-Nasai, As-Sunan Al-Kubra (9928); Al-Tabarani; Sahih by Al-Albani in Sahih at-Targhib (655)',
     ),
 
-    // 2. Surah Al-Ikhlas
+    // 2. Dua of Yunus
     Dhikr(
       id: 'morning_2',
-      title: 'Surah Al-Ikhlas',
-      arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ''',
-      transliteration: 'Qul huwa Allahu ahad, Allahus-samad, lam yalid wa lam yulad, wa lam yakun lahu kufuwan ahad',
-      englishTranslation: 'Say, "He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent."',
-      repetitions: 3,
-      category: 'morning',
-      fazail: 'Reciting Surah Al-Ikhlas, Al-Falaq, and An-Nas three times in the morning and evening will suffice you in all respects.',
-      reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
-    ),
-
-    // 3. Dua of Yunus
-    Dhikr(
-      id: 'morning_3',
       title: 'Du\'a of Yunus',
       arabicText: '''لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ''',
       transliteration: 'La ilaha illa anta subhanaka inni kuntu minaz-zalimin',
@@ -42,9 +28,9 @@ class AdhkarData {
       reference: 'Jami\' at-Tirmidhi (3505)',
     ),
 
-    // 4. Bismillah protection dua
+    // 3. Bismillah protection dua
     Dhikr(
-      id: 'morning_4',
+      id: 'morning_3',
       title: 'Protection from Harm',
       arabicText: '''بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ''',
       transliteration: 'Bismillahil-ladhi la yadurru ma\'as-mihi shai\'un fil-ardi wa la fis-sama\'i, wa Huwas-Sami\'ul-\'Alim',
@@ -53,6 +39,20 @@ class AdhkarData {
       category: 'morning',
       fazail: 'He who recites this three times every morning and evening, nothing will harm him.',
       reference: 'Riyad as-Salihin (1457)',
+    ),
+
+    // 4. Surah Al-Ikhlas
+    Dhikr(
+      id: 'morning_4',
+      title: 'Surah Al-Ikhlas',
+      arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ''',
+      transliteration: 'Qul huwa Allahu ahad, Allahus-samad, lam yalid wa lam yulad, wa lam yakun lahu kufuwan ahad',
+      englishTranslation: 'Say, "He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent."',
+      repetitions: 3,
+      category: 'morning',
+      fazail: 'Reciting Surah Al-Ikhlas, Al-Falaq, and An-Nas three times in the morning and evening will suffice you in all respects.',
+      reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
     ),
 
     // 5. Surah Al-Falaq
@@ -267,23 +267,9 @@ class AdhkarData {
       reference: 'An-Nasai, As-Sunan Al-Kubra (9928); Al-Tabarani; Sahih by Al-Albani in Sahih at-Targhib (655)',
     ),
 
-    // 2. Surah Al-Ikhlas
+    // 2. Dua of Yunus
     Dhikr(
       id: 'evening_2',
-      title: 'Surah Al-Ikhlas',
-      arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ''',
-      transliteration: 'Qul huwa Allahu ahad, Allahus-samad, lam yalid wa lam yulad, wa lam yakun lahu kufuwan ahad',
-      englishTranslation: 'Say, "He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent."',
-      repetitions: 3,
-      category: 'evening',
-      fazail: 'Reciting Surah Al-Ikhlas, Al-Falaq, and An-Nas three times in the morning and evening will suffice you in all respects.',
-      reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
-    ),
-
-    // 3. Dua of Yunus
-    Dhikr(
-      id: 'evening_3',
       title: 'Du\'a of Yunus',
       arabicText: '''لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ''',
       transliteration: 'La ilaha illa anta subhanaka inni kuntu minaz-zalimin',
@@ -294,9 +280,9 @@ class AdhkarData {
       reference: 'Jami\' at-Tirmidhi (3505)',
     ),
 
-    // 4. Bismillah protection dua
+    // 3. Bismillah protection dua
     Dhikr(
-      id: 'evening_4',
+      id: 'evening_3',
       title: 'Protection from Harm',
       arabicText: '''بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ''',
       transliteration: 'Bismillahil-ladhi la yadurru ma\'as-mihi shai\'un fil-ardi wa la fis-sama\'i, wa Huwas-Sami\'ul-\'Alim',
@@ -305,6 +291,20 @@ class AdhkarData {
       category: 'evening',
       fazail: 'He who recites this three times every morning and evening, nothing will harm him.',
       reference: 'Riyad as-Salihin (1457)',
+    ),
+
+    // 4. Surah Al-Ikhlas
+    Dhikr(
+      id: 'evening_4',
+      title: 'Surah Al-Ikhlas',
+      arabicText: '''بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ''',
+      transliteration: 'Qul huwa Allahu ahad, Allahus-samad, lam yalid wa lam yulad, wa lam yakun lahu kufuwan ahad',
+      englishTranslation: 'Say, "He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent."',
+      repetitions: 3,
+      category: 'evening',
+      fazail: 'Reciting Surah Al-Ikhlas, Al-Falaq, and An-Nas three times in the morning and evening will suffice you in all respects.',
+      reference: 'Sunan Abu Dawud (5082); Jami\' at-Tirmidhi (3575); Narrated by Abdullah bin Khubayb',
     ),
 
     // 5. Surah Al-Falaq

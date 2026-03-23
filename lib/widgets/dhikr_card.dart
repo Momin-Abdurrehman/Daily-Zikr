@@ -47,24 +47,42 @@ class _DhikrCardState extends State<DhikrCard> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Index badge
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Text(
-                    '${widget.index + 1}',
-                    style: AppTheme.englishStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Theme.of(context).colorScheme.primary,
+                // Left-side: drag handle + index badge
+                Row(
+                  children: [
+                    // Drag handle — only this region initiates reorder drag
+                    ReorderableDragStartListener(
+                      index: widget.index,
+                      child: Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: Icon(
+                          Icons.drag_handle_rounded,
+                          color: isDark ? Colors.grey[600] : Colors.grey[400],
+                          size: 24,
+                        ),
+                      ),
                     ),
-                  ),
+
+                    // Index badge
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Text(
+                        '${widget.index + 1}',
+                        style: AppTheme.englishStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
 
-                // Right-side: custom badge + repetitions + drag handle
+                // Right-side: custom badge + repetitions
                 Row(
                   children: [
                     // "My Dua" badge for custom entries
@@ -110,15 +128,6 @@ class _DhikrCardState extends State<DhikrCard> {
                           color: AppTheme.accentGold,
                         ),
                       ),
-                    ),
-
-                    const SizedBox(width: 8),
-
-                    // Drag handle (always visible, used by ReorderableListView)
-                    Icon(
-                      Icons.drag_handle_rounded,
-                      color: isDark ? Colors.grey[600] : Colors.grey[400],
-                      size: 22,
                     ),
                   ],
                 ),

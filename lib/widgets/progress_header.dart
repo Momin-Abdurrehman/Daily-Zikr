@@ -4,11 +4,13 @@ import '../core/theme.dart';
 class ProgressHeader extends StatelessWidget {
   final String title;
   final bool isCompleted;
+  final Widget? trailing;
 
   const ProgressHeader({
     super.key,
     required this.title,
     required this.isCompleted,
+    this.trailing,
   });
 
   @override
@@ -25,27 +27,26 @@ class ProgressHeader extends StatelessWidget {
       child: SafeArea(
         bottom: false,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.arrow_back, color: Colors.white),
-                  onPressed: () => Navigator.pop(context),
-                ),
-                const SizedBox(width: 8),
-                Text(
-                  title,
-                  style: AppTheme.englishStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-              ],
+            IconButton(
+              icon: const Icon(Icons.arrow_back, color: Colors.white),
+              onPressed: () => Navigator.pop(context),
             ),
+            const SizedBox(width: 4),
+            Expanded(
+              child: Text(
+                title,
+                style: AppTheme.englishStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+            const SizedBox(width: 8),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               decoration: BoxDecoration(
                 color: isCompleted
                     ? Colors.white.withValues(alpha: 0.2)
@@ -62,13 +63,13 @@ class ProgressHeader extends StatelessWidget {
                   Icon(
                     isCompleted ? Icons.check_circle : Icons.circle_outlined,
                     color: isCompleted ? AppTheme.accentGold : Colors.white70,
-                    size: 20,
+                    size: 18,
                   ),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 6),
                   Text(
-                    isCompleted ? 'Completed' : 'In Progress',
+                    isCompleted ? 'Done' : 'In Progress',
                     style: AppTheme.englishStyle(
-                      fontSize: 14,
+                      fontSize: 13,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
                     ),
@@ -76,6 +77,10 @@ class ProgressHeader extends StatelessWidget {
                 ],
               ),
             ),
+            if (trailing != null) ...[
+              const SizedBox(width: 6),
+              trailing!,
+            ],
           ],
         ),
       ),
