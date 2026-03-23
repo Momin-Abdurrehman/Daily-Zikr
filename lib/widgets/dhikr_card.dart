@@ -7,14 +7,17 @@ import '../providers/settings_provider.dart';
 class DhikrCard extends StatefulWidget {
   final Dhikr dhikr;
   final int index;
-  /// Non-null only for custom (user-added) items. Tapping shows delete confirm.
+  /// Non-null only for custom (user-added) items.
   final VoidCallback? onDelete;
+  /// Non-null only for built-in items — hides the dhikr from the list.
+  final VoidCallback? onHide;
 
   const DhikrCard({
     super.key,
     required this.dhikr,
     required this.index,
     this.onDelete,
+    this.onHide,
   });
 
   @override
@@ -236,20 +239,32 @@ class _DhikrCardState extends State<DhikrCard> {
                   ),
                 ),
 
-                // Delete button — only for custom items
-                if (widget.onDelete != null) ...[
+                // Action button — eye-off for built-in, delete for custom
+                if (widget.onHide != null || widget.onDelete != null) ...[
                   const SizedBox(width: 10),
                   InkWell(
-                    onTap: widget.onDelete,
+                    onTap: widget.onDelete ?? widget.onHide,
                     borderRadius: BorderRadius.circular(12),
                     child: Container(
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Colors.redAccent.withValues(alpha: 0.1),
+                        color: widget.onDelete != null
+                            ? Colors.redAccent.withValues(alpha: 0.1)
+                            : Colors.grey.withValues(alpha: 0.12),
                         borderRadius: BorderRadius.circular(12),
-                        border: Border.all(color: Colors.redAccent.withValues(alpha: 0.3)),
+                        border: Border.all(
+                          color: widget.onDelete != null
+                              ? Colors.redAccent.withValues(alpha: 0.3)
+                              : Colors.grey.withValues(alpha: 0.3),
+                        ),
                       ),
-                      child: const Icon(Icons.delete_outline_rounded, color: Colors.redAccent, size: 20),
+                      child: Icon(
+                        widget.onDelete != null
+                            ? Icons.delete_outline_rounded
+                            : Icons.visibility_off_outlined,
+                        color: widget.onDelete != null ? Colors.redAccent : Colors.grey,
+                        size: 20,
+                      ),
                     ),
                   ),
                 ],

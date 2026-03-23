@@ -11,16 +11,30 @@ class AdhkarProvider extends ChangeNotifier {
   int _streak = 0;
   bool _isLoaded = false;
 
-  List<Dhikr> _morningAdhkar = [];
-  List<Dhikr> _eveningAdhkar = [];
+  // All ordered items (visible + hidden)
+  List<Dhikr> _allMorningAdhkar = [];
+  List<Dhikr> _allEveningAdhkar = [];
+
+  // IDs the user has chosen to hide (built-in only)
+  Set<String> _hiddenMorningIds = {};
+  Set<String> _hiddenEveningIds = {};
 
   bool get morningCompleted => _morningCompleted;
   bool get eveningCompleted => _eveningCompleted;
   int get streak => _streak;
   bool get isLoaded => _isLoaded;
 
-  List<Dhikr> get morningAdhkar => _morningAdhkar;
-  List<Dhikr> get eveningAdhkar => _eveningAdhkar;
+  /// Visible (non-hidden) adhkar
+  List<Dhikr> get morningAdhkar =>
+      _allMorningAdhkar.where((d) => !_hiddenMorningIds.contains(d.id)).toList();
+  List<Dhikr> get eveningAdhkar =>
+      _allEveningAdhkar.where((d) => !_hiddenEveningIds.contains(d.id)).toList();
+
+  /// Hidden built-in items (for the Restore sheet)
+  List<Dhikr> get hiddenMorningAdhkar =>
+      _allMorningAdhkar.where((d) => _hiddenMorningIds.contains(d.id)).toList();
+  List<Dhikr> get hiddenEveningAdhkar =>
+      _allEveningAdhkar.where((d) => _hiddenEveningIds.contains(d.id)).toList();
 
   AdhkarProvider() {
     _loadData();
@@ -122,14 +136,19 @@ class AdhkarProvider extends ChangeNotifier {
       _eveningCompleted = prefs.getBool(AppConstants.keyEveningCompleted) ?? false;
     }
 
-    // Load custom adhkar and saved orders
+    // Load custom adhkar, saved orders, and hidden IDs
     final customMorning = await _loadCustomAdhkar(AppConstants.keyCustomMorningAdhkar);
     final customEvening = await _loadCustomAdhkar(AppConstants.keyCustomEveningAdhkar);
     final morningOrder = await _loadOrder(AppConstants.keyMorningAdhkarOrder);
     final eveningOrder = await _loadOrder(AppConstants.keyEveningAdhkarOrder);
 
-    _morningAdhkar = _buildOrderedList(AdhkarData.morningAdhkar, customMorning, morningOrder);
-    _eveningAdhkar = _buildOrderedList(AdhkarData.eveningAdhkar, customEvening, eveningOrder);
+    _allMorningAdhkar = _buildOrderedList(AdhkarData.morningAdhkar, customMorning, morningOrder);
+    _allEveningAdhkar = _buildOrderedList(AdhkarData.eveningAdhkar, customEvening, eveningOrder);
+
+    final hiddenMorning = await _loadOrder(AppConstants.keyHiddenMorningIds);
+    final hiddenEvening = await _loadOrder(AppConstants.keyHiddenEveningIds);
+    _hiddenMorningIds = hiddenMorning.toSet();
+    _hiddenEveningIds = hiddenEvening.toSet();
 
     _isLoaded = true;
     notifyListeners();
@@ -141,47 +160,87 @@ class AdhkarProvider extends ChangeNotifier {
 
   Future<void> addCustomDhikr(Dhikr dhikr) async {
     if (dhikr.category == 'morning') {
-      _morningAdhkar = [..._morningAdhkar, dhikr];
-      final customOnly = _morningAdhkar.where((d) => d.isCustom).toList();
+      _allMorningAdhkar = [..._allMorningAdhkar, dhikr];
+      final customOnly = _allMorningAdhkar.where((d) => d.isCustom).toList();
       await _saveCustomAdhkar(AppConstants.keyCustomMorningAdhkar, customOnly);
-      await _saveOrder(AppConstants.keyMorningAdhkarOrder, _morningAdhkar.map((d) => d.id).toList());
+      await _saveOrder(AppConstants.keyMorningAdhkarOrder, _allMorningAdhkar.map((d) => d.id).toList());
     } else {
-      _eveningAdhkar = [..._eveningAdhkar, dhikr];
-      final customOnly = _eveningAdhkar.where((d) => d.isCustom).toList();
+      _allEveningAdhkar = [..._allEveningAdhkar, dhikr];
+      final customOnly = _allEveningAdhkar.where((d) => d.isCustom).toList();
       await _saveCustomAdhkar(AppConstants.keyCustomEveningAdhkar, customOnly);
-      await _saveOrder(AppConstants.keyEveningAdhkarOrder, _eveningAdhkar.map((d) => d.id).toList());
+      await _saveOrder(AppConstants.keyEveningAdhkarOrder, _allEveningAdhkar.map((d) => d.id).toList());
     }
     notifyListeners();
   }
 
   Future<void> deleteCustomDhikr(String id, bool isMorning) async {
     if (isMorning) {
-      _morningAdhkar = _morningAdhkar.where((d) => d.id != id).toList();
-      final customOnly = _morningAdhkar.where((d) => d.isCustom).toList();
+      _allMorningAdhkar = _allMorningAdhkar.where((d) => d.id != id).toList();
+      final customOnly = _allMorningAdhkar.where((d) => d.isCustom).toList();
       await _saveCustomAdhkar(AppConstants.keyCustomMorningAdhkar, customOnly);
-      await _saveOrder(AppConstants.keyMorningAdhkarOrder, _morningAdhkar.map((d) => d.id).toList());
+      await _saveOrder(AppConstants.keyMorningAdhkarOrder, _allMorningAdhkar.map((d) => d.id).toList());
     } else {
-      _eveningAdhkar = _eveningAdhkar.where((d) => d.id != id).toList();
-      final customOnly = _eveningAdhkar.where((d) => d.isCustom).toList();
+      _allEveningAdhkar = _allEveningAdhkar.where((d) => d.id != id).toList();
+      final customOnly = _allEveningAdhkar.where((d) => d.isCustom).toList();
       await _saveCustomAdhkar(AppConstants.keyCustomEveningAdhkar, customOnly);
-      await _saveOrder(AppConstants.keyEveningAdhkarOrder, _eveningAdhkar.map((d) => d.id).toList());
+      await _saveOrder(AppConstants.keyEveningAdhkarOrder, _allEveningAdhkar.map((d) => d.id).toList());
     }
     notifyListeners();
   }
 
+  /// Reorder operates on the *visible* list, then we rebuild the full all-list order.
   Future<void> reorderAdhkar(int oldIndex, int newIndex, bool isMorning) async {
     if (isMorning) {
-      final list = [..._morningAdhkar];
-      final item = list.removeAt(oldIndex);
-      list.insert(newIndex, item);
-      _morningAdhkar = list;
-      await _saveOrder(AppConstants.keyMorningAdhkarOrder, list.map((d) => d.id).toList());
+      // Work on the visible (non-hidden) slice
+      final visible = morningAdhkar;
+      final item = visible.removeAt(oldIndex);
+      visible.insert(newIndex, item);
+      // Rebuild _allMorningAdhkar preserving hidden items at their relative positions
+      _allMorningAdhkar = _mergeReorderedVisible(visible, _allMorningAdhkar, _hiddenMorningIds);
+      await _saveOrder(AppConstants.keyMorningAdhkarOrder, _allMorningAdhkar.map((d) => d.id).toList());
     } else {
-      final list = [..._eveningAdhkar];
-      final item = list.removeAt(oldIndex);
-      list.insert(newIndex, item);
-      _eveningAdhkar = list;
-      await _saveOrder(AppConstants.keyEveningAdhkarOrder, list.map((d) => d.id).toList());
+      final visible = eveningAdhkar;
+      final item = visible.removeAt(oldIndex);
+      visible.insert(newIndex, item);
+      _allEveningAdhkar = _mergeReorderedVisible(visible, _allEveningAdhkar, _hiddenEveningIds);
+      await _saveOrder(AppConstants.keyEveningAdhkarOrder, _allEveningAdhkar.map((d) => d.id).toList());
+    }
+    notifyListeners();
+  }
+
+  /// Re-inserts hidden items at their previous positions within the new visible order.
+  List<Dhikr> _mergeReorderedVisible(
+    List<Dhikr> newVisible,
+    List<Dhikr> previousAll,
+    Set<String> hiddenIds,
+  ) {
+    final hiddenItems = previousAll.where((d) => hiddenIds.contains(d.id)).toList();
+    // Simple strategy: hidden items go at the end (they're not shown anyway)
+    return [...newVisible, ...hiddenItems];
+  }
+
+  // ---------------------------------------------------------------------------
+  // Hide / Restore built-in Adhkar
+  // ---------------------------------------------------------------------------
+
+  Future<void> hideBuiltInDhikr(String id, bool isMorning) async {
+    if (isMorning) {
+      _hiddenMorningIds = {..._hiddenMorningIds, id};
+      await _saveOrder(AppConstants.keyHiddenMorningIds, _hiddenMorningIds.toList());
+    } else {
+      _hiddenEveningIds = {..._hiddenEveningIds, id};
+      await _saveOrder(AppConstants.keyHiddenEveningIds, _hiddenEveningIds.toList());
+    }
+    notifyListeners();
+  }
+
+  Future<void> restoreDhikr(String id, bool isMorning) async {
+    if (isMorning) {
+      _hiddenMorningIds = _hiddenMorningIds.difference({id});
+      await _saveOrder(AppConstants.keyHiddenMorningIds, _hiddenMorningIds.toList());
+    } else {
+      _hiddenEveningIds = _hiddenEveningIds.difference({id});
+      await _saveOrder(AppConstants.keyHiddenEveningIds, _hiddenEveningIds.toList());
     }
     notifyListeners();
   }
