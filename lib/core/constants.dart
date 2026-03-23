@@ -5,6 +5,12 @@ class AppConstants {
   static const String keyLastResetDate = 'last_reset_date';
   static const String keyStreak = 'streak';
   static const String keyThemeMode = 'theme_mode';
+
+  // Custom Adhkar Storage Keys
+  static const String keyCustomMorningAdhkar = 'custom_morning_adhkar';
+  static const String keyCustomEveningAdhkar = 'custom_evening_adhkar';
+  static const String keyMorningAdhkarOrder = 'morning_adhkar_order';
+  static const String keyEveningAdhkarOrder = 'evening_adhkar_order';
   static const String keyMorningNotificationTime = 'morning_notification_time';
   static const String keyEveningNotificationTime = 'evening_notification_time';
   static const String keyNotificationsEnabled = 'notifications_enabled';
