@@ -20,7 +20,7 @@ class SettingsProvider extends ChangeNotifier {
   );
   bool _notificationsEnabled = true;
   bool _transliterationEnabled = true; // Show transliteration by default
-  ArabicFontStyle _arabicFontStyle = ArabicFontStyle.nastaliq;
+  ArabicFontStyle _arabicFontStyle = ArabicFontStyle.naskh;
 
   AppThemeMode get themeMode => _themeMode;
   TimeOfDay get morningNotificationTime => _morningNotificationTime;
