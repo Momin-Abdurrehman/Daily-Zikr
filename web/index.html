@@ -207,10 +207,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 18px;
         background: linear-gradient(160deg, #1B5E20 0%, #2E7D32 50%, #1a4a1e 100%);
         z-index: 9999;
-        transition: opacity 0.6s ease, visibility 0.6s ease;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
       }
 
       #splash.hidden {
@@ -219,91 +219,48 @@
         pointer-events: none;
       }
 
-      /* Decorative ring */
-      .splash-ring {
-        position: absolute;
-        border-radius: 50%;
-        border: 1px solid rgba(212, 175, 55, 0.15);
-        animation: breathe 3s ease-in-out infinite;
-      }
-      .splash-ring:nth-child(1) { width: 260px; height: 260px; animation-delay: 0s; }
-      .splash-ring:nth-child(2) { width: 320px; height: 320px; animation-delay: 0.5s; }
-      .splash-ring:nth-child(3) { width: 380px; height: 380px; animation-delay: 1s; }
-
-      @keyframes breathe {
-        0%, 100% { transform: scale(1); opacity: 0.4; }
-        50%       { transform: scale(1.05); opacity: 0.8; }
-      }
-
       /* Icon container */
       .splash-icon-wrap {
-        position: relative;
-        width: 100px;
-        height: 100px;
-        border-radius: 24px;
+        width: 88px;
+        height: 88px;
+        border-radius: 22px;
         background: rgba(255,255,255,0.1);
-        backdrop-filter: blur(8px);
         border: 1px solid rgba(212,175,55,0.4);
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
       }
 
       .splash-icon-wrap img {
-        width: 72px;
-        height: 72px;
-        border-radius: 16px;
+        width: 64px;
+        height: 64px;
+        border-radius: 14px;
         object-fit: cover;
       }
 
       /* App name */
       .splash-title {
         font-family: Georgia, serif;
-        font-size: 28px;
+        font-size: 26px;
         font-weight: bold;
         color: #fff;
         letter-spacing: 1px;
-        text-shadow: 0 2px 8px rgba(0,0,0,0.3);
       }
 
       /* Arabic subtitle */
       .splash-arabic {
-        font-size: 20px;
+        font-size: 18px;
         color: rgba(212, 175, 55, 0.9);
         direction: rtl;
-        letter-spacing: 2px;
-        text-shadow: 0 1px 4px rgba(0,0,0,0.3);
       }
 
       /* Gold divider */
       .splash-divider {
-        width: 60px;
+        width: 50px;
         height: 2px;
         background: linear-gradient(90deg, transparent, #D4AF37, transparent);
-        border-radius: 1px;
-      }
-
-      /* Spinner */
-      .splash-spinner {
-        width: 32px;
-        height: 32px;
-        border: 3px solid rgba(255,255,255,0.15);
-        border-top-color: #D4AF37;
-        border-radius: 50%;
-        animation: spin 0.9s linear infinite;
-        margin-top: 8px;
-      }
-
-      @keyframes spin {
-        to { transform: rotate(360deg); }
       }
     </style>
-
-    <!-- Decorative rings -->
-    <div class="splash-ring"></div>
-    <div class="splash-ring"></div>
-    <div class="splash-ring"></div>
 
     <!-- Icon -->
     <div class="splash-icon-wrap">
@@ -314,12 +271,13 @@
     <div class="splash-title">Daily Zikr</div>
     <div class="splash-divider"></div>
     <div class="splash-arabic">أذكار الصباح والمساء</div>
-
-    <!-- Spinner -->
-    <div class="splash-spinner"></div>
   </div>
   <!-- ===================== END SPLASH ===================== -->
 
+  <script>
+    // Use HTML renderer on mobile for faster load, CanvasKit on desktop for quality
+    window.flutterWebRenderer = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? "html" : "canvaskit";
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 
   <script>
